@@ -9,7 +9,7 @@ import sys
 sys.path.append('../')
 sys.path.append('../utils')
 
-from nlp4es8.ir.config import Config
+from nlp4es8.ir.es_config import Config
 
 
 # from utils.logger_config import base_logger
@@ -47,8 +47,7 @@ class Search(object):
             result.append(
                 (
                     data['_source']['index'],
-                    data['_source']['document'],
-                    data['_source']['type']
+                    data['_source']['document']
                 )
             )
         return result
@@ -58,12 +57,33 @@ class Search(object):
 
 if __name__ == '__main__':
     import pandas as pd
+    import json
 
     index_file_content_config = Config()
-    index_file_content_config.index_name = "锦江酒店2019年年度报告"
-    search_name = Search(index_file_content_config)
-    while True:
-        query = input("please input")
+    index_file_content_config.index_name = "kbqa"
+    search_name = Search(index_file_content_config, "kbqa")
+    # while True:
+    #     query = input("please input")
+    #     result = search_name.searchAnswer(query)
+    #     print(result[0])
+    #     for data in result:
+    #         print("question:%s  question_id:%s  " % (data[0], data[1]))
+    predict_data = open("../../data/test.json", encoding="utf8").readlines()
+    # predict_data = open("../../data/提交示例.json", encoding="utf8").readlines()
+    # print(predict_data[2])
+    # exit()
+    submission = open("../../result/es_baseline.json", "w",encoding="utf8")
+    predict_data = eval("".join([k.strip() for k in predict_data]))
+    print(predict_data[0])
+    # exit()
+    # predict_data = [json.load(k) for k in predict_data]#[:100]
+    final_result=[]
+    from tqdm import tqdm
+    for unit in tqdm(predict_data):
+        query = unit["question"]
         result = search_name.searchAnswer(query)
-        for data in result:
-            print("question:%s  question_id:%s  " % (data[0], data[1]))
+        temp_final_result = result[0][1]
+        unit["attribute"] = temp_final_result
+        final_result.append(unit)
+    submission.write(json.dumps(final_result,ensure_ascii=False))
+    print(predict_data[0])

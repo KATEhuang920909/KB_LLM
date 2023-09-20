@@ -6,8 +6,8 @@
 update es total sub question
 """
 # from ir.search_file_name import Search
-from nlp4es8.ir.index_hnsw import Index
-from nlp4es8.ir.config import Config
+from nlp4es8.ir.index_traditional import Index
+from nlp4es8.ir.es_config import Config
 import os
 from tqdm import tqdm
 
@@ -16,35 +16,14 @@ from tqdm import tqdm
 
 
 class Es_Update():
-    def __init__(self, filename):
-        self.file_name_idx = self.update_file_name(filename)
-
-    def update_file_name(self, index_name):
-        # 同步ES库
-
-        config = Config()
-
-        index_file_name = Index(config.embedding_path, index_name)
-
-        file_path = [os.path.join(config.dir_path, file)
-                     for file in os.listdir(config.dir_path)]
-        file_name = {i: {'document': "".join(k.split(".")[0].split("__")[-3:]), 'idx': i}
-                     for i, k in enumerate(file_path)}
-        file_name_idx = {"".join(k.split(".")[0].split("__")[-3:]): k for i, k in enumerate(file_path)}
-        config.es.indices.delete("filename", ignore=[400, 404])
-
-        create_info = index_file_name.create_index(config)
-        print(create_info)
-        if create_info == "创建成功":
-            index_file_name.bulk_index(file_name, bulk_size=1000, config=config)
-        return file_name_idx
-
+    def create_index(self,index_name):
+        pass
     def update_content(self, file_path, index_name):
         # 同步ES库
         config = Config()
         index_file_content = Index(config.embedding_path, index_name)
         questions = index_file_content.data_convert_v3(file_path)
-        update_info = index_file_content.create_index(config)
+
         print(update_info)
         if update_info == "创建成功":
             print(questions[100])
@@ -53,6 +32,8 @@ class Es_Update():
         return questions
 
 
-if __name__ == '__main__':
-    es_update = Es_Update()
-    file_name_idx = es_update.update_file_name()
+# if __name__ == '__main__':
+#     update_info = index_file_content.create_index(config)
+#     es_update = Es_Update()
+#     for i in range(9):
+#         file_name_idx = es_update.update_content(f"../../data/kbqa{i}.txt","KBQA")

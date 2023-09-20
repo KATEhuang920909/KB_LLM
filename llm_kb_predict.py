@@ -11,7 +11,7 @@ from config import maxlen, topk, PROMPT_TEMPLATE, threshold, dir_path, embedding
     excel_prefix_prompt, text_prefix_prompt, llm_path
 from ir.search_file_name import Search
 from ir.search_content import Search as SearchContent
-from ir.config import Config
+from ir.es_config import Config
 from ir.es_update import Es_Update
 
 """

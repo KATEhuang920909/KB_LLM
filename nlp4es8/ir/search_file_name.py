@@ -9,7 +9,7 @@ sys.path.append('../')
 sys.path.append('../utils')
 sys.path.append('../../')
 
-from nlp4es8.ir.config import Config
+from nlp4es8.ir.es_config import Config
 # from utils.logger_config import base_logger
 
 

@@ -3,40 +3,36 @@
 """
 """
 import pandas as pd
-from langchain.embeddings.huggingface import HuggingFaceEmbeddings
+# from langchain.embeddings.huggingface import HuggingFaceEmbeddings
 from langchain.vectorstores import FAISS
-from llm_predict import LLM_PREDICTOR
+# from llm_predict import LLM_PREDICTOR
 from data_preprocess import DataPreprocess
 from config import maxlen, topk, PROMPT_TEMPLATE, threshold, dir_path, embedding_path, feature_extract_prompt, \
     excel_prefix_prompt, text_prefix_prompt, llm_path
-from ir.search_file_name import Search
-from ir.search_content import Search as SearchContent
-from ir.config import Config
-from ir.es_update import Es_Update
-
+# from search_file_name import Search
+from search_content import Search as SearchContent
+from es_update import Es_Update
+from es_config import Config
 """
-1.抽取关键词，依据关键词检索文档；
-2.将相关文档存储为向量形式；
-3.依据QUERY检索固定的向量
-4.将固定向量相邻的文本类型串起来，同时作为prompt的一部分；
-5.chatglm2问答
+1.将知识点入库
+2.es 检索
 """
 
 
 # 中文Wikipedia数据导入示例：
 class LLM_KB():
-    def __init__(self, embedding_path):#, llm_path):
-        self.embeddings = HuggingFaceEmbeddings(model_name=embedding_path,
-                                                model_kwargs={'device': "cpu"},
-                                                encode_kwargs={'normalize_embeddings': True})
+    def __init__(self, embedding_path):  # , llm_path):
+        # self.embeddings = HuggingFaceEmbeddings(model_name=embedding_path,
+        #                                         model_kwargs={'device': "cpu"},
+        #                                         encode_kwargs={'normalize_embeddings': True})
         # self.llm_predictor = LLM_PREDICTOR(llm_path)
         # print(self.embeddings.embed_query("你试试额"))
         self.es_update = Es_Update()
-        index_file_name_config = Config()
-        index_file_name_config.index_name = "filename"
+        # index_file_name_config = Config()
+        index_file_name_config.index_name = "kbqa"
         self.search_name = Search(index_file_name_config)
 
-        self.index_file_content_config = Config()
+        # self.index_file_content_config = Config()
 
         self.dp = DataPreprocess(maxlen=maxlen)
 
@@ -135,11 +131,12 @@ if __name__ == '__main__':
 
     es_update = Es_Update()
     index_file_name_config = Config()
-    index_file_name_config.index_name = "filename"
-    search_name = Search(index_file_name_config)
+
 
     #
     index_file_content_config = Config()
+    index_file_name_config.index_name = "kbqa"
+    search_name = SearchContent(index_file_name_config)
     #
     dp = DataPreprocess(maxlen=maxlen)
     # # 找出关键词：
@@ -152,60 +149,17 @@ if __name__ == '__main__':
     # # for unit in key_word:
     # #     query = query.replace(unit, "")
     # # 找到对应的文件
-    final_result=[]
+    final_result = []
     while True:
         query = input("please input")
         result = search_name.searchAnswer(query)[0][0]
         print(result)
-    #     # 对应的文件写入es
-    #     # result = "锦江酒店2019年年度报告"
+        #     # 对应的文件写入es
+        #     # result = "锦江酒店2019年年度报告"
         questions = es_update.update_content(es_update.file_name_idx[result], result)
         index_file_content_config.index_name = result
-    #     # query检索
+        #     # query检索
         search_content = SearchContent(index_file_content_config)
         query1 = "电子邮箱是什么"
         result2 = search_content.searchAnswer(query1)
-        print(result2,index_file_content_config.index_name)
-    #     flag = 0
-    #     for unit in result2:
-    #         if unit[2] in ["excel", "text"]:
-    #
-    #             chunk_info = dp.document_chunk_idx(questions, unit)
-    #             if unit[2] == "excel":
-    #                 prompt = excel_prefix_prompt + \
-    #                          PROMPT_TEMPLATE.replace("{question}", query1).replace("{context}", chunk_info)
-    #             elif unit[2] == "text":
-    #                 prompt = text_prefix_prompt + \
-    #                          PROMPT_TEMPLATE.replace("{question}", query1).replace("{context}", chunk_info)
-    #             flag += 1
-    #             print(prompt + "\n")
-    #             # response = self.llm_chat(prompt)
-    #             final_result.append(prompt)
-    #         if flag == 2:
-    #             break
-    # print(final_result)
-
-
-
-    # else:
-    #     prompt = query1
-    #     final_result.append(prompt)
-
-    #
-    # print(llm_chain.es_result("的法定代表人是谁？"))
-    # with open("test_questions.json", encoding="utf8") as f:
-    #     data = f.readlines()
-    #     data = [json.loads(k.strip()) for k in data]
-    # submit = open(r"result/submit_0809.json","w",encoding="utf8")
-    # for unit in data:
-    #     result = llm_chain.llm_feature_extract(unit["question"])
-    #     unit["key_word"] = result
-    #     submit.write(json.dumps(unit, ensure_ascii=False) + "\n")
-    #
-    #
-    #     while True:
-    #         query = input("please input")
-    #         result = search_name.searchAnswer(query)
-    #         print(result)
-    #         # for data in result:
-    #         #     print("question:%s  question_id:%s  " % (data[0], data[1]))
+        print(result2, index_file_content_config.index_name)

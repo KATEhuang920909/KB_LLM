@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2023/8/3 9:53
 # @Author  : huangkai
-# @File    : config.py
+# @File    : es_config.py
 maxlen = 500
 topk = 5
 threshold = 0.7

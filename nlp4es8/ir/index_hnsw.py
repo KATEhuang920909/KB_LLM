@@ -28,9 +28,9 @@ import gc
 class Index(object):
     def __init__(self, embedding_path, index_name):
         # base_logger.info("Indexing ...")
-        self.embeddings = HuggingFaceEmbeddings(model_name=embedding_path,
-                                                model_kwargs={'device': "cpu"},
-                                                encode_kwargs={'normalize_embeddings': True})
+        # self.embeddings = HuggingFaceEmbeddings(model_name=embedding_path,
+        #                                         model_kwargs={'device': "cpu"},
+        #                                         encode_kwargs={'normalize_embeddings': True})
         self.index_name = index_name
 
     # @staticmethod
@@ -81,15 +81,9 @@ class Index(object):
         question = {}
         with open(file, encoding="utf8") as f:
             docs = f.readlines()
-            # print(file)
-            contents = [json.loads(k.strip())["inside"] if json.loads(k.strip()) != {} else json.loads(k.strip())
-                        for k in docs]
 
-            types = [json.loads(k.strip())["type"] if json.loads(k.strip()) != {} else json.loads(k.strip())
-                     for k in docs]
-
-        for i, (content, typ) in enumerate(zip(contents, types)):
-            question[i] = {'index': i, 'document': content, "type": typ}
+        for i, content in enumerate(docs):
+            question[i] = {'index': i, 'document': content}
         return question
 
     # @staticmethod
@@ -109,11 +103,7 @@ class Index(object):
                         # "analyzer": "index_ansj",
                         # "search_analyzer": "query_ansj",
                         "index": "true"
-                    },
-
-                    "type": {
-                        "type": "keyword",
-                        "index": "false"},
+                    }
                 }
             }
         }
