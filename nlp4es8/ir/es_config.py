@@ -43,7 +43,7 @@ class Config(object):
         self.index_name = "kbqa"
         # self.index_name = "knn_test2"
         # self.doc_type = "all_question"
-        self.top_n = 10
+        self.top_n = 20
 
 # if __name__ == '__main__':
 # Config = Config(env='int')

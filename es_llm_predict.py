@@ -3,37 +3,36 @@
 """
 """
 import pandas as pd
-# from langchain.embeddings.huggingface import HuggingFaceEmbeddings
+from langchain.embeddings.huggingface import HuggingFaceEmbeddings
 from langchain.vectorstores import FAISS
-# from llm_predict import LLM_PREDICTOR
+from llm_predict import LLM_PREDICTOR
 from data_preprocess import DataPreprocess
 from config import maxlen, topk, PROMPT_TEMPLATE, threshold, dir_path, embedding_path, feature_extract_prompt, \
     excel_prefix_prompt, text_prefix_prompt, llm_path
-# from search_file_name import Search
 from search_content import Search as SearchContent
-from es_update import Es_Update
 from es_config import Config
+from es_update import Es_Update
+
 """
-1.将知识点入库
-2.es 检索
+1.抽取关键词，依据关键词检索文档；
+2.将相关文档存储为向量形式；
+3.依据QUERY检索固定的向量
+4.将固定向量相邻的文本类型串起来，同时作为prompt的一部分；
+5.chatglm2问答
 """
 
 
 # 中文Wikipedia数据导入示例：
 class LLM_KB():
     def __init__(self, embedding_path):  # , llm_path):
-        # self.embeddings = HuggingFaceEmbeddings(model_name=embedding_path,
-        #                                         model_kwargs={'device': "cpu"},
-        #                                         encode_kwargs={'normalize_embeddings': True})
+        self.embeddings = HuggingFaceEmbeddings(model_name=embedding_path,
+                                                model_kwargs={'device': "cpu"},
+                                                encode_kwargs={'normalize_embeddings': True})
         # self.llm_predictor = LLM_PREDICTOR(llm_path)
         # print(self.embeddings.embed_query("你试试额"))
-        self.es_update = Es_Update()
-        # index_file_name_config = Config()
-        index_file_name_config.index_name = "kbqa"
-        self.search_name = Search(index_file_name_config)
-
-        # self.index_file_content_config = Config()
-
+        self.es_update = Es_Update("filename")
+        self.config = Config()
+        self.search_name = Search(self.config, "filename")
         self.dp = DataPreprocess(maxlen=maxlen)
 
     def vector_store(self, files, vs_path, ):
@@ -62,22 +61,16 @@ class LLM_KB():
             idx += 1
         return final_text, type
 
-    def generate_prompt(self, related_doc, TYPE, query: str, prompt_template: str = PROMPT_TEMPLATE,
-                        preprompt="") -> str:
-        if TYPE == "excel":
-            preprompt = "根据以下表格信息："
-        elif TYPE == "text":
-            preprompt = "根据以下文本信息："
+    def generate_prompt(self, related_text, query: str, preprompt="") -> str:
+        prompt_template = """基于以下已知信息，简洁和专业的来回答用户的问题。
+            如果无法从中得到答案，请说 "根据已知信息无法回答该问题" 或 "没有提供足够的相关信息"，不允许在答案中添加编造成分，答案请使用中文。
+            已知内容:
+            {context}
+            问题:
+            {question}"""
 
-        prompt = preprompt + prompt_template.replace("{question}", query).replace("{context}", related_doc)
+        prompt = preprompt + prompt_template.replace("{question}", query).replace("{context}", related_text)
         return prompt
-
-    def llm_feature_extract(self, query, prompt_template=feature_extract_prompt):
-        response, history = self.llm_predictor.predict(prompt_template + query)
-        response = response.split("\n")
-        name = response[0].split("：")[-1]
-        time = response[1].split("：")[-1]
-        return name, time
 
     def llm_chat(self, prompt):
         response, history = self.llm_predictor.predict(prompt)
@@ -86,22 +79,27 @@ class LLM_KB():
 
     def es_result(self, key_word, query):
         final_result = [query]
-        query1 = "".join(key_word)
-
-        for unit in key_word:
+        temp_query1 = key_word.replace("公司名称：", "_").replace("日期：", "_").replace(" ", "")
+        query1 = []
+        for unit in temp_query1.split("_"):
+            if unit:
+                query1.append(unit)
+        query1 = "".join(query1)
+        for unit in query1:
             query = query.replace(unit, "")
+        # print("query1", query1, query)
         # 找到对应的文件
         if query1:
+            time.sleep(1)
             result = self.search_name.searchAnswer(query1)[0][0]
             print(self.es_update.file_name_idx[result], result)
             # 对应的文件写入es
             # result = "锦江酒店2019年年度报告"
             questions = self.es_update.update_content(self.es_update.file_name_idx[result], result)
 
-            self.index_file_content_config.index_name = result
             # query检索
-            search_content = SearchContent(self.index_file_content_config)
-
+            search_content = SearchContent(self.config, index_name=result)
+            print("query", query)
             result2 = search_content.searchAnswer(query)
             flag = 0
             for unit in result2:
@@ -116,8 +114,8 @@ class LLM_KB():
                                  PROMPT_TEMPLATE.replace("{question}", query).replace("{context}", chunk_info)
                     flag += 1
                     print(prompt + "\n")
-                    response = self.llm_chat(prompt)
-                    final_result.append(response)
+                    # response = self.llm_chat(prompt)
+                    final_result.append(prompt)
                 if flag == 2:
                     break
         else:
@@ -129,37 +127,36 @@ class LLM_KB():
 if __name__ == '__main__':
     import json
 
-    es_update = Es_Update()
-    index_file_name_config = Config()
-
-
-    #
-    index_file_content_config = Config()
-    index_file_name_config.index_name = "kbqa"
-    search_name = SearchContent(index_file_name_config)
-    #
-    dp = DataPreprocess(maxlen=maxlen)
-    # # 找出关键词：
+    # 找出关键词：
     # key_word = []
-    # llm_chain = LLM_KB(embedding_path=embedding_path)#, llm_path=llm_path)
+    llm_chain = LLM_KB(embedding_path=embedding_path)  # , llm_path=llm_path)
+    #
+    # # print(llm_chain.es_result("的法定代表人是谁？"))
+    # with open("test_questions.json", encoding="utf8") as f:
+    #     data = f.readlines()
+    #     data = [json.loads(k.strip()) for k in data]
+    # submit = open(r"result/submit_0809.json","w",encoding="utf8")
+    # for unit in data:
+    #     result = llm_chain.llm_feature_extract(unit["question"])
+    #     unit["key_word"] = result
+    #     submit.write(json.dumps(unit, ensure_ascii=False) + "\n")
 
-    # # final_result = [query]
-    # # query1 = "".join(key_word)
-    # #
-    # # for unit in key_word:
-    # #     query = query.replace(unit, "")
-    # # 找到对应的文件
-    final_result = []
+    # 基于关键词和原句子进行索引：
+    import time
+
+    with open("keyword/submit_0809.json", encoding="utf8") as f:
+        data = f.readlines()
+        data = [json.loads(k.strip()) for k in data]
     while True:
-        query = input("please input")
-        result = search_name.searchAnswer(query)[0][0]
+        num = input("input num ")
+        kw = data[int(num)]["key_word"]
+        query1 = data[int(num)]["question"]
+        print("query1", query1)
+        # time.sleep(1)
+        result = llm_chain.es_result(kw, query1)
         print(result)
-        #     # 对应的文件写入es
-        #     # result = "锦江酒店2019年年度报告"
-        questions = es_update.update_content(es_update.file_name_idx[result], result)
-        index_file_content_config.index_name = result
-        #     # query检索
-        search_content = SearchContent(index_file_content_config)
-        query1 = "电子邮箱是什么"
-        result2 = search_content.searchAnswer(query1)
-        print(result2, index_file_content_config.index_name)
+    # print(llm_chain.es_result(kw, query))
+    # while True:
+    #     query1 = input("请输出")
+    #     result = llm_chain.search_name.searchAnswer(query1)[0][0]
+    #     print(result)

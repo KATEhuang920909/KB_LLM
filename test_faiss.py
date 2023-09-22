@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2023/8/2 15:31
 # @Author  : huangkai
-# @File    : test.py
+# @File    : test_faiss.py
 
 # 官方示例代码，用的OpenAI的ada的文本Embedding模型
 # 1） Embeding model
