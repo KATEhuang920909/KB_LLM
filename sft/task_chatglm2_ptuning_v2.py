@@ -5,11 +5,9 @@
 # | ----------------------          | --------- | ------------ | ------------- | ----------- | ----------- | --------- | ------- |
 # | b4t+pt2+v100+int4+bs1           |   7G      |      ——      |     24.36     |    29.97    |     6.66    |    7.89   |         |
 
-from bert4torch.models import build_transformer_model
-from bert4torch.snippets import sequence_padding, text_segmentate
+from bert4torch.snippets import sequence_padding
 from bert4torch.callbacks import Callback
 import torch.nn as nn
-import torch
 import torch.optim as optim
 from torch.utils.data import DataLoader
 import torch

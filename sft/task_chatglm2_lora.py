@@ -7,14 +7,13 @@
 # |            chatglm              |  gpu      | Time/epoch(s)|    Rouge-L    |   Rouge-1   |   Rouge-2   |   BLEU    | comment |
 # | ----------------------          | --------- | ------------ | ------------- | ----------- | ----------- | --------- | ------- |
 
-from bert4torch.models import build_transformer_model
-from bert4torch.snippets import sequence_padding, text_segmentate
+
+from bert4torch.snippets import sequence_padding
 import torch.nn as nn
-import torch
 import torch.optim as optim
 from torch.utils.data import DataLoader
 import torch
-from bert4torch.models import build_transformer_model, BaseModel
+from bert4torch.models import build_transformer_model
 from bert4torch.snippets import ListDataset
 from bert4torch.generation import SeqGeneration
 from bert4torch.callbacks import Callback, Logger
