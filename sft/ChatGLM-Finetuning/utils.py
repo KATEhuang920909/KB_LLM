@@ -20,16 +20,20 @@ from torch.utils.data import Dataset
 
 class GLMPromptDataSet(Dataset):
 
-    def __init__(self, data_path, tokenizer, max_len, max_src_len, is_skip):
+    def __init__(self, data_path, tokenizer, max_len, max_src_len, is_skip, prompt=""):
         self.all_data = []
         skip_data_number = 0
         with open(data_path, "r", encoding="utf-8") as fh:
             for i, line in enumerate(fh):
                 sample = json.loads(line.strip())
                 skip_flag = False
-
-                src_tokens = tokenizer.tokenize(
-                    "[Round {}]\n问：{}\n答：".format(1, sample["instruction"] + sample["input"]))
+                if sample["task_type"] == "tuple_extract":
+                    prompt = "请抽取下面问句的主宾二元组，格式xx|xx。问句："
+                    src_tokens = tokenizer.tokenize(prompt + sample["question"])
+                elif sample["task_type"] == "table_extract":
+                    prompt = "已知下面表格信息："
+                    src_tokens = tokenizer.tokenize(
+                        prompt + "{}，\n问：{}\n答：".format(sample["instruction"], sample["question"]))
 
                 if len(src_tokens) > max_src_len:
                     # 当输入内容超长时，随向后截断，但保留“\n答：”内容
@@ -37,7 +41,7 @@ class GLMPromptDataSet(Dataset):
                     skip_flag = True
 
                 max_tgt_len = max_len - 3 - len(src_tokens)
-                tgt_tokens = tokenizer.tokenize(sample["output"])
+                tgt_tokens = tokenizer.tokenize(sample["answer"])
 
                 if len(tgt_tokens) > max_tgt_len:
                     tgt_tokens = tgt_tokens[:max_tgt_len]
@@ -74,8 +78,13 @@ class GLM2PromptDataSet(Dataset):
             for i, line in enumerate(fh):
                 sample = json.loads(line.strip())
                 skip_flag = False
-                src_tokens = tokenizer.tokenize(
-                    "[Round {}]\n\n问：{}\n\n答：".format(1, sample["instruction"] + sample["input"]))
+                if sample["task_type"] == "tuple_extract":
+                    prompt = "请抽取下面问句的主宾二元组，格式xx|xx。问句："
+                    src_tokens = tokenizer.tokenize(prompt + sample["question"])
+                elif sample["task_type"] == "table_extract":
+                    prompt = "已知下面表格信息："
+                    src_tokens = tokenizer.tokenize(
+                        prompt + "{}，\n问：{}\n答：".format(sample["instruction"], sample["question"]))
 
                 if len(src_tokens) > max_src_len:
                     # 当输入内容超长时，随向后截断，但保留“\n\n答：”内容
@@ -184,3 +193,10 @@ def save_model(model, tokenizer, output_dir, model_name, state_dict=None):
     else:
         model.save_pretrained(save_dir, state_dict=state_dict, torch_dtype=torch.float16)
     tokenizer.save_pretrained(save_dir)
+
+
+if __name__ == '__main__':
+    from glm2.tokenization_chatglm import ChatGLMTokenizer as ChatGLM2Tokenizer
+
+    tokenizer = ChatGLM2Tokenizer.from_pretrained(r"D:\代码\pretrained_model\chatglm2-6b")
+    train_dataset = GLM2PromptDataSet("../../data/train_sft.json", tokenizer, 1280, 1024, "store_true")

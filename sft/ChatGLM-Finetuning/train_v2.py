@@ -7,7 +7,7 @@
 # @time: 2023/8/6 16:13
 """
     文件说明：
-
+            
 """
 import argparse
 import json
@@ -34,6 +34,7 @@ def parse_args():
     parser.add_argument("--model_name_or_path", type=str, help="", required=True)
     # DataSet
     parser.add_argument("--train_path", default="", type=str, help="")
+    parser.add_argument("--dev_path", default="", type=str, help="")
     parser.add_argument("--max_len", type=int, default=1024, help="")
     parser.add_argument("--max_src_len", type=int, default=256, help="")
     parser.add_argument("--is_skip", action='store_true', help="")
@@ -68,9 +69,64 @@ def parse_args():
     return parser.parse_args()
 
 
-def main():
-    args = parse_args()
+def evaluate(dev_path):
+    sums, count = 0.0, 0.0
+    max_tgt_len = args.max_len - args.max_src_len - 3
+    with open(dev_path, "r", encoding="utf-8") as fh:
+        data = fh.readlines()
+        for i, line in enumerate(tqdm(data, desc="iter")):
+            with torch.no_grad():
+                sample = json.loads(line.strip())
+                skip_flag = False
+                if sample["task_type"] == "tuple_extract":
+                    prompt = "请抽取下面问句的主宾二元组，格式xx|xx。问句："
+                    src_tokens = tokenizer.tokenize(prompt + sample["question"])
+                elif sample["task_type"] == "table_extract":
+                    prompt = "已知下面表格信息："
+                    src_tokens = tokenizer.tokenize(
+                        prompt + "{}，\n问：{}\n答：".format(sample["instruction"], sample["question"]))
 
+                if len(src_tokens) > args.max_src_len:
+                    # 当输入内容超长时，随向后截断，但保留“\n答：”内容
+                    src_tokens = src_tokens[:args.max_src_len - 3] + src_tokens[-3:]
+                    skip_flag = True
+
+                # max_tgt_len = max_len - 3 - len(src_tokens)
+                tgt_tokens = tokenizer.tokenize(sample["answer"])
+
+                if len(tgt_tokens) > max_tgt_len:
+                    tgt_tokens = tgt_tokens[:max_tgt_len]
+                    skip_flag = True
+
+                # ChatGLM需要在输入内容后面增加"[gMASK]"、"<sop>"标记
+                tokens = src_tokens + ["[gMASK]", "<sop>"] + tgt_tokens + ["<eop>"]
+                input_ids = tokenizer.convert_tokens_to_ids(tokens)
+                # input_ids = tokenizer.encode("帮我写个快排算法")
+
+                input_ids = torch.tensor([input_ids]).to("cuda:{}".format(0))
+                generation_kwargs = {
+                    "min_length": 1,
+                    "max_new_tokens": max_tgt_len,
+                    "top_p": 0.7,
+                    "temperature": 0.95,
+                    "do_sample": False,
+                    "num_return_sequences": 1,
+                }
+                response = model.generate_one(input_ids, **generation_kwargs)
+
+                sums += 1
+                for i_r in range(generation_kwargs["num_return_sequences"]):
+                    outputs = response.tolist()[i_r][input_ids.shape[1]:]
+                    pre_res = tokenizer.decode(outputs).replace("<eop>", "")
+                    real_res = sample["answer"]
+                    if pre_res == real_res:
+                        count += 1
+
+    return count / sums
+
+
+if __name__ == "__main__":
+    args = parse_args()
     if args.local_rank == -1:
         device = torch.device("cuda")
     else:
@@ -142,7 +198,6 @@ def main():
                                   batch_size=args.per_device_train_batch_size)
     print_rank_0("len(train_dataloader) = {}".format(len(train_dataloader)), args.global_rank)
     print_rank_0("len(train_dataset) = {}".format(len(train_dataset)), args.global_rank)
-
     # load optimizer
     ds_config["optimizer"]["params"]["lr"] = args.learning_rate
     ds_config["optimizer"]["params"]["betas"] = (0.9, 0.95)
@@ -172,13 +227,14 @@ def main():
             def make_inputs_require_grad(module, input, output):
                 output.requires_grad_(True)
 
+
             model.get_input_embeddings().register_forward_hook(make_inputs_require_grad)
 
     # init deepspeed
     model, optimizer, _, lr_scheduler = deepspeed.initialize(model=model, args=args, config=ds_config,
                                                              dist_init_required=True)
     model.train()
-    tr_loss, logging_loss, min_loss = 0.0, 0.0, 0.0
+    tr_loss, logging_loss, min_loss, best_acc = 0.0, 0.0, 0.0, 0.0
     global_step = 0
     # train
     for epoch in range(args.num_train_epochs):
@@ -201,7 +257,7 @@ def main():
                     print_rank_0("Epoch: {}, step: {}, global_step:{}, loss: {}".format(epoch, step + 1, global_step,
                                                                                         (tr_loss - logging_loss) /
                                                                                         (
-                                                                                                args.show_loss_step * args.gradient_accumulation_steps)
+                                                                                                    args.show_loss_step * args.gradient_accumulation_steps)
                                                                                         ),
                                  args.global_rank)
                     print_rank_0("step: {}-{}-{}".format(step + 1, global_step, model.global_steps), args.global_rank)
@@ -221,15 +277,15 @@ def main():
                         if args.global_rank <= 0:
                             save_model(model, tokenizer, args.output_dir, f"epoch-{epoch + 1}-step-{global_step}")
                     model.train()
-
-        if ds_config["zero_optimization"]["stage"] == 3:
-            state_dict = model._zero3_consolidated_16bit_state_dict()
-            if args.global_rank <= 0:
-                save_model(model, tokenizer, args.output_dir, f"epoch-{epoch + 1}-step-{global_step}", state_dict)
-        else:
-            if args.global_rank <= 0:
-                save_model(model, tokenizer, args.output_dir, f"epoch-{epoch + 1}-step-{global_step}")
-
-
-if __name__ == "__main__":
-    main()
+        acc = evaluate(args.dev_path)
+        if acc > best_acc:
+            best_acc = acc
+            if ds_config["zero_optimization"]["stage"] == 3:
+                state_dict = model._zero3_consolidated_16bit_state_dict()
+                if args.global_rank <= 0:
+                    save_model(model, tokenizer, args.output_dir,
+                               f"epoch-{epoch + 1}-step-{global_step}-acc-{best_acc}", state_dict)
+            else:
+                if args.global_rank <= 0:
+                    save_model(model, tokenizer, args.output_dir,
+                               f"epoch-{epoch + 1}-step-{global_step}-acc-{best_acc}")
