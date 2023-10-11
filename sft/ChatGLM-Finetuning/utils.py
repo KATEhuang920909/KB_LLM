@@ -7,7 +7,7 @@
 # @time: 2023/8/6 16:13
 """
     文件说明：
-            
+
 """
 import torch
 import random
@@ -25,41 +25,42 @@ class GLMPromptDataSet(Dataset):
         skip_data_number = 0
         with open(data_path, "r", encoding="utf-8") as fh:
             for i, line in enumerate(fh):
-                sample = json.loads(line.strip())
-                skip_flag = False
-                if sample["task_type"] == "tuple_extract":
-                    prompt = "请抽取下面问句的主宾二元组，格式xx|xx。问句："
-                    src_tokens = tokenizer.tokenize(prompt + sample["question"])
-                elif sample["task_type"] == "table_extract":
-                    prompt = "已知下面表格信息："
-                    src_tokens = tokenizer.tokenize(
-                        prompt + "{}，\n问：{}\n答：".format(sample["instruction"], sample["question"]))
+                if i <= 100:
+                    sample = json.loads(line.strip())
+                    skip_flag = False
+                    if sample["task_type"] == "tuple_extract":
+                        prompt = "请抽取下面问句的主宾二元组，格式xx|xx。问句："
+                        src_tokens = tokenizer.tokenize(prompt + sample["question"])
+                    elif sample["task_type"] == "table_extract":
+                        prompt = "已知下面表格信息："
+                        src_tokens = tokenizer.tokenize(
+                            prompt + "{}，\n问：{}\n答：".format(sample["instruction"], sample["question"]))
 
-                if len(src_tokens) > max_src_len:
-                    # 当输入内容超长时，随向后截断，但保留“\n答：”内容
-                    src_tokens = src_tokens[:max_src_len - 3] + src_tokens[-3:]
-                    skip_flag = True
+                    if len(src_tokens) > max_src_len:
+                        # 当输入内容超长时，随向后截断，但保留“\n答：”内容
+                        src_tokens = src_tokens[:max_src_len - 3] + src_tokens[-3:]
+                        skip_flag = True
 
-                max_tgt_len = max_len - 3 - len(src_tokens)
-                tgt_tokens = tokenizer.tokenize(sample["answer"])
+                    max_tgt_len = max_len - 3 - len(src_tokens)
+                    tgt_tokens = tokenizer.tokenize(sample["answer"])
 
-                if len(tgt_tokens) > max_tgt_len:
-                    tgt_tokens = tgt_tokens[:max_tgt_len]
-                    skip_flag = True
+                    if len(tgt_tokens) > max_tgt_len:
+                        tgt_tokens = tgt_tokens[:max_tgt_len]
+                        skip_flag = True
 
-                # ChatGLM需要在输入内容后面增加"[gMASK]"、"<sop>"标记
-                tokens = src_tokens + ["[gMASK]", "<sop>"] + tgt_tokens + ["<eop>"]
-                input_ids = tokenizer.convert_tokens_to_ids(tokens)
-                context_length = input_ids.index(tokenizer.bos_token_id)
-                mask_position = context_length - 1
-                labels = [-100] * context_length + input_ids[mask_position + 1:]
+                    # ChatGLM需要在输入内容后面增加"[gMASK]"、"<sop>"标记
+                    tokens = src_tokens + ["[gMASK]", "<sop>"] + tgt_tokens + ["<eop>"]
+                    input_ids = tokenizer.convert_tokens_to_ids(tokens)
+                    context_length = input_ids.index(tokenizer.bos_token_id)
+                    mask_position = context_length - 1
+                    labels = [-100] * context_length + input_ids[mask_position + 1:]
 
-                assert len(input_ids) == len(labels)
-                assert len(input_ids) <= max_len
-                if is_skip and skip_flag:
-                    skip_data_number += 1
-                    continue
-                self.all_data.append({"input_ids": input_ids, "labels": labels})
+                    assert len(input_ids) == len(labels)
+                    assert len(input_ids) <= max_len
+                    if is_skip and skip_flag:
+                        skip_data_number += 1
+                        continue
+                    self.all_data.append({"input_ids": input_ids, "labels": labels})
         print("the number of skipping data is {}".format(skip_data_number))
 
     def __len__(self):
@@ -193,10 +194,3 @@ def save_model(model, tokenizer, output_dir, model_name, state_dict=None):
     else:
         model.save_pretrained(save_dir, state_dict=state_dict, torch_dtype=torch.float16)
     tokenizer.save_pretrained(save_dir)
-
-
-if __name__ == '__main__':
-    from glm2.tokenization_chatglm import ChatGLMTokenizer as ChatGLM2Tokenizer
-
-    tokenizer = ChatGLM2Tokenizer.from_pretrained(r"D:\代码\pretrained_model\chatglm2-6b")
-    train_dataset = GLM2PromptDataSet("../../data/train_sft.json", tokenizer, 1280, 1024, "store_true")
