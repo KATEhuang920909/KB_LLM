@@ -1,0 +1,1147 @@
+2023-08-08 00:19:06,203 - powerbi.py[line:22] - WARNING: Could not import azure.core python package.
+2023-08-08 00:19:06,899 - utils.py[line:148] - INFO: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-08-08 00:19:06,899 - utils.py[line:160] - INFO: NumExpr defaulting to 8 threads.
+2023-08-08 00:19:11,850 - powerbi.py[line:22] - WARNING: Could not import azure.core python package.
+2023-08-08 00:19:12,475 - utils.py[line:148] - INFO: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-08-08 00:19:12,475 - utils.py[line:160] - INFO: NumExpr defaulting to 8 threads.
+2023-08-08 00:19:12,676 - search.py[line:17] - INFO: Searching ...
+2023-08-08 00:19:12,676 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 00:19:12,676 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 00:19:30,493 - powerbi.py[line:22] - WARNING: Could not import azure.core python package.
+2023-08-08 00:19:31,154 - utils.py[line:148] - INFO: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-08-08 00:19:31,154 - utils.py[line:160] - INFO: NumExpr defaulting to 8 threads.
+2023-08-08 00:19:31,360 - search.py[line:17] - INFO: Searching ...
+2023-08-08 00:19:31,360 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 00:19:31,361 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 00:19:57,331 - powerbi.py[line:22] - WARNING: Could not import azure.core python package.
+2023-08-08 00:19:58,002 - utils.py[line:148] - INFO: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-08-08 00:19:58,002 - utils.py[line:160] - INFO: NumExpr defaulting to 8 threads.
+2023-08-08 00:19:58,280 - search.py[line:17] - INFO: Searching ...
+2023-08-08 00:19:58,280 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 00:19:58,280 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 00:19:58,280 - index_hnsw.py[line:27] - INFO: Indexing ...
+2023-08-08 00:20:01,366 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 00:20:01,366 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 00:20:02,490 - index_hnsw.py[line:78] - INFO: creating knn_test2 index ...
+2023-08-08 00:20:02,506 - base.py[line:81] - INFO: DELETE http://127.0.0.1:9200/knn_test2 [status:404 request:0.016s]
+2023-08-08 00:20:02,550 - base.py[line:95] - WARNING: PUT http://127.0.0.1:9200/knn_test2 [status:400 request:0.045s]
+2023-08-08 00:20:02,550 - index_hnsw.py[line:105] - WARNING: TransportError(400, 'mapper_parsing_exception', 'unknown parameter [similarity ] on mapper [embedding] of type [dense_vector]')
+2023-08-08 00:21:01,841 - powerbi.py[line:22] - WARNING: Could not import azure.core python package.
+2023-08-08 00:21:02,472 - utils.py[line:148] - INFO: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-08-08 00:21:02,472 - utils.py[line:160] - INFO: NumExpr defaulting to 8 threads.
+2023-08-08 00:21:02,668 - search.py[line:17] - INFO: Searching ...
+2023-08-08 00:21:02,668 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 00:21:02,668 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 00:21:02,669 - index_hnsw.py[line:27] - INFO: Indexing ...
+2023-08-08 00:21:05,073 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 00:21:05,073 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 00:21:06,120 - index_hnsw.py[line:78] - INFO: creating knn_test2 index ...
+2023-08-08 00:21:06,124 - base.py[line:81] - INFO: DELETE http://127.0.0.1:9200/knn_test2 [status:404 request:0.004s]
+2023-08-08 00:21:06,131 - base.py[line:95] - WARNING: PUT http://127.0.0.1:9200/knn_test2 [status:400 request:0.007s]
+2023-08-08 00:21:06,131 - index_hnsw.py[line:105] - WARNING: TransportError(400, 'mapper_parsing_exception', 'unknown parameter [similarity ] on mapper [embedding] of type [dense_vector]')
+2023-08-08 00:22:10,496 - powerbi.py[line:22] - WARNING: Could not import azure.core python package.
+2023-08-08 00:22:11,172 - utils.py[line:148] - INFO: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-08-08 00:22:11,172 - utils.py[line:160] - INFO: NumExpr defaulting to 8 threads.
+2023-08-08 00:22:11,380 - search.py[line:17] - INFO: Searching ...
+2023-08-08 00:22:11,380 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 00:22:11,380 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 00:22:11,380 - index_hnsw.py[line:27] - INFO: Indexing ...
+2023-08-08 00:22:13,954 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 00:22:13,955 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 00:22:15,016 - index_hnsw.py[line:78] - INFO: creating knn_test2 index ...
+2023-08-08 00:22:15,020 - base.py[line:81] - INFO: DELETE http://127.0.0.1:9200/knn_test2 [status:404 request:0.003s]
+2023-08-08 00:22:15,027 - base.py[line:95] - WARNING: PUT http://127.0.0.1:9200/knn_test2 [status:400 request:0.007s]
+2023-08-08 00:22:15,028 - index_hnsw.py[line:105] - WARNING: TransportError(400, 'mapper_parsing_exception', 'unknown parameter [similarity ] on mapper [embedding] of type [dense_vector]')
+2023-08-08 00:22:34,642 - powerbi.py[line:22] - WARNING: Could not import azure.core python package.
+2023-08-08 00:22:35,291 - utils.py[line:148] - INFO: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-08-08 00:22:35,291 - utils.py[line:160] - INFO: NumExpr defaulting to 8 threads.
+2023-08-08 00:22:35,490 - search.py[line:17] - INFO: Searching ...
+2023-08-08 00:22:35,490 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 00:22:35,490 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 00:22:35,490 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 00:22:37,867 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 00:22:37,867 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 00:22:38,914 - index_hnsw.py[line:79] - INFO: creating knn_test2 index ...
+2023-08-08 00:22:38,919 - base.py[line:81] - INFO: DELETE http://127.0.0.1:9200/knn_test2 [status:404 request:0.005s]
+2023-08-08 00:22:38,926 - base.py[line:95] - WARNING: PUT http://127.0.0.1:9200/knn_test2 [status:400 request:0.007s]
+2023-08-08 00:22:38,926 - index_hnsw.py[line:106] - WARNING: TransportError(400, 'mapper_parsing_exception', 'unknown parameter [similarity ] on mapper [embedding] of type [dense_vector]')
+2023-08-08 00:23:36,261 - powerbi.py[line:22] - WARNING: Could not import azure.core python package.
+2023-08-08 00:23:36,943 - utils.py[line:148] - INFO: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-08-08 00:23:36,943 - utils.py[line:160] - INFO: NumExpr defaulting to 8 threads.
+2023-08-08 00:23:37,150 - search.py[line:17] - INFO: Searching ...
+2023-08-08 00:23:37,150 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 00:23:37,150 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 00:23:37,150 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 00:23:39,543 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 00:23:39,543 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 00:23:40,597 - index_hnsw.py[line:79] - INFO: creating knn_test2 index ...
+2023-08-08 00:23:40,600 - base.py[line:81] - INFO: DELETE http://127.0.0.1:9200/knn_test2 [status:404 request:0.003s]
+2023-08-08 00:23:40,608 - base.py[line:95] - WARNING: PUT http://127.0.0.1:9200/knn_test2 [status:400 request:0.006s]
+2023-08-08 00:23:40,608 - index_hnsw.py[line:106] - WARNING: TransportError(400, 'mapper_parsing_exception', 'unknown parameter [similarity ] on mapper [embedding] of type [dense_vector]')
+2023-08-08 00:24:01,939 - powerbi.py[line:22] - WARNING: Could not import azure.core python package.
+2023-08-08 00:24:02,583 - utils.py[line:148] - INFO: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-08-08 00:24:02,583 - utils.py[line:160] - INFO: NumExpr defaulting to 8 threads.
+2023-08-08 00:24:02,812 - search.py[line:17] - INFO: Searching ...
+2023-08-08 00:24:02,813 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 00:24:02,813 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 00:24:02,813 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 00:24:05,187 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 00:24:05,187 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 00:24:06,220 - index_hnsw.py[line:79] - INFO: creating knn_test2 index ...
+2023-08-08 00:24:06,223 - base.py[line:81] - INFO: DELETE http://127.0.0.1:9200/knn_test2 [status:404 request:0.003s]
+2023-08-08 00:24:06,230 - base.py[line:95] - WARNING: PUT http://127.0.0.1:9200/knn_test2 [status:400 request:0.006s]
+2023-08-08 00:24:06,230 - index_hnsw.py[line:106] - WARNING: TransportError(400, 'mapper_parsing_exception', 'unknown parameter [similarity ] on mapper [embedding] of type [dense_vector]')
+2023-08-08 00:24:10,605 - index_hnsw.py[line:110] - INFO: Bulk index for question
+2023-08-08 00:24:11,361 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.691s]
+2023-08-08 00:24:11,362 - index_hnsw.py[line:131] - INFO: Bulk index: 101
+2023-08-08 00:44:48,721 - search.py[line:17] - INFO: Searching ...
+2023-08-08 00:44:48,721 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 00:44:48,734 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 00:44:48,735 - search.py[line:17] - INFO: Searching ...
+2023-08-08 00:44:48,735 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 00:45:13,440 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/knn_test2/_search [status:200 request:0.045s]
+2023-08-08 00:49:01,778 - powerbi.py[line:22] - WARNING: Could not import azure.core python package.
+2023-08-08 00:49:02,424 - utils.py[line:148] - INFO: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-08-08 00:49:02,424 - utils.py[line:160] - INFO: NumExpr defaulting to 8 threads.
+2023-08-08 00:49:02,627 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 00:49:02,628 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 00:49:05,059 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 00:49:05,060 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 00:49:06,162 - search_vector.py[line:20] - INFO: Searching ...
+2023-08-08 00:49:06,162 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 00:49:06,162 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 00:50:45,210 - powerbi.py[line:22] - WARNING: Could not import azure.core python package.
+2023-08-08 00:50:45,832 - utils.py[line:148] - INFO: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-08-08 00:50:45,832 - utils.py[line:160] - INFO: NumExpr defaulting to 8 threads.
+2023-08-08 00:50:46,027 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 00:50:46,027 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 00:50:48,417 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 00:50:48,417 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 00:50:49,469 - search_vector.py[line:20] - INFO: Searching ...
+2023-08-08 00:50:49,469 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 00:50:49,469 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 00:50:51,699 - base.py[line:95] - WARNING: GET http://127.0.0.1:9200/knn_test2/_search [status:400 request:0.006s]
+2023-08-08 00:51:17,247 - powerbi.py[line:22] - WARNING: Could not import azure.core python package.
+2023-08-08 00:51:17,901 - utils.py[line:148] - INFO: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-08-08 00:51:17,901 - utils.py[line:160] - INFO: NumExpr defaulting to 8 threads.
+2023-08-08 00:51:18,110 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 00:51:18,110 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 00:51:20,469 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 00:51:20,469 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 00:51:21,492 - search_vector.py[line:20] - INFO: Searching ...
+2023-08-08 00:51:21,493 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 00:51:21,493 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 00:51:32,821 - base.py[line:95] - WARNING: GET http://127.0.0.1:9200/knn_test2/_search [status:400 request:0.009s]
+2023-08-08 00:51:59,344 - powerbi.py[line:22] - WARNING: Could not import azure.core python package.
+2023-08-08 00:52:00,001 - utils.py[line:148] - INFO: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-08-08 00:52:00,001 - utils.py[line:160] - INFO: NumExpr defaulting to 8 threads.
+2023-08-08 00:52:00,211 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 00:52:00,211 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 00:52:02,590 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 00:52:02,591 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 00:52:03,619 - search_vector.py[line:20] - INFO: Searching ...
+2023-08-08 00:52:03,619 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 00:52:03,619 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 00:52:27,370 - base.py[line:95] - WARNING: GET http://127.0.0.1:9200/knn_test2/_search [status:400 request:0.005s]
+2023-08-08 00:52:48,877 - powerbi.py[line:22] - WARNING: Could not import azure.core python package.
+2023-08-08 00:52:49,503 - utils.py[line:148] - INFO: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-08-08 00:52:49,504 - utils.py[line:160] - INFO: NumExpr defaulting to 8 threads.
+2023-08-08 00:52:49,707 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 00:52:49,707 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 00:52:52,071 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 00:52:52,071 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 00:52:53,136 - search_vector.py[line:20] - INFO: Searching ...
+2023-08-08 00:52:53,137 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 00:52:53,137 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 00:52:53,773 - base.py[line:95] - WARNING: GET http://127.0.0.1:9200/knn_test2/_search [status:400 request:0.004s]
+2023-08-08 00:53:01,785 - powerbi.py[line:22] - WARNING: Could not import azure.core python package.
+2023-08-08 00:53:02,400 - utils.py[line:148] - INFO: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-08-08 00:53:02,400 - utils.py[line:160] - INFO: NumExpr defaulting to 8 threads.
+2023-08-08 00:53:02,599 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 00:53:02,599 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 00:53:04,975 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 00:53:04,977 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 00:53:06,016 - search_vector.py[line:20] - INFO: Searching ...
+2023-08-08 00:53:06,016 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 00:53:06,016 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 00:53:08,496 - base.py[line:95] - WARNING: GET http://127.0.0.1:9200/knn_test2/_search [status:400 request:0.004s]
+2023-08-08 00:55:46,963 - powerbi.py[line:22] - WARNING: Could not import azure.core python package.
+2023-08-08 00:55:47,591 - utils.py[line:148] - INFO: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-08-08 00:55:47,591 - utils.py[line:160] - INFO: NumExpr defaulting to 8 threads.
+2023-08-08 00:55:47,807 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 00:55:47,807 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 00:55:50,193 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 00:55:50,193 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 00:55:51,287 - search_vector.py[line:20] - INFO: Searching ...
+2023-08-08 00:55:51,287 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 00:55:51,287 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 00:55:52,762 - base.py[line:95] - WARNING: GET http://127.0.0.1:9200/knn_test2/_search [status:400 request:0.003s]
+2023-08-08 00:58:18,130 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/knn_test2/_search [status:200 request:0.024s]
+2023-08-08 01:01:35,296 - powerbi.py[line:22] - WARNING: Could not import azure.core python package.
+2023-08-08 01:01:35,976 - utils.py[line:148] - INFO: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-08-08 01:01:35,976 - utils.py[line:160] - INFO: NumExpr defaulting to 8 threads.
+2023-08-08 01:01:36,179 - search.py[line:17] - INFO: Searching ...
+2023-08-08 01:01:36,179 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 01:01:36,179 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 01:01:36,180 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 01:01:38,638 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 01:01:38,638 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 01:01:39,689 - index_hnsw.py[line:93] - INFO: creating knn_test2 index ...
+2023-08-08 01:01:39,806 - base.py[line:81] - INFO: DELETE http://127.0.0.1:9200/knn_test2 [status:200 request:0.114s]
+2023-08-08 01:01:39,812 - base.py[line:95] - WARNING: PUT http://127.0.0.1:9200/knn_test2 [status:400 request:0.006s]
+2023-08-08 01:01:39,812 - index_hnsw.py[line:120] - WARNING: TransportError(400, 'mapper_parsing_exception', 'unknown parameter [similarity ] on mapper [embedding] of type [dense_vector]')
+2023-08-08 01:01:39,834 - index_hnsw.py[line:124] - INFO: Bulk index for question
+2023-08-08 01:01:40,215 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.374s]
+2023-08-08 01:01:40,291 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.069s]
+2023-08-08 01:01:40,351 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.055s]
+2023-08-08 01:01:40,394 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.037s]
+2023-08-08 01:01:40,438 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.038s]
+2023-08-08 01:01:40,485 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.040s]
+2023-08-08 01:01:40,521 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.030s]
+2023-08-08 01:01:40,559 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.030s]
+2023-08-08 01:01:40,595 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.030s]
+2023-08-08 01:01:40,629 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.028s]
+2023-08-08 01:01:40,663 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.028s]
+2023-08-08 01:01:40,681 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.015s]
+2023-08-08 01:01:40,682 - index_hnsw.py[line:145] - INFO: Bulk index: 5725
+2023-08-08 01:02:01,377 - search.py[line:17] - INFO: Searching ...
+2023-08-08 01:02:01,377 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 01:02:01,391 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 01:02:01,391 - search.py[line:17] - INFO: Searching ...
+2023-08-08 01:02:01,391 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 01:02:09,592 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/knn_test2/_search [status:200 request:0.013s]
+2023-08-08 01:02:09,592 - search.py[line:54] - WARNING: 'embedding'
+2023-08-08 01:02:09,592 - search.py[line:55] - WARNING: Try again!
+2023-08-08 01:02:09,599 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/knn_test2/_search [status:200 request:0.007s]
+2023-08-08 01:02:09,599 - search.py[line:54] - WARNING: 'embedding'
+2023-08-08 01:02:09,599 - search.py[line:55] - WARNING: Try again!
+2023-08-08 01:02:09,605 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/knn_test2/_search [status:200 request:0.006s]
+2023-08-08 01:02:09,605 - search.py[line:54] - WARNING: 'embedding'
+2023-08-08 01:02:09,605 - search.py[line:55] - WARNING: Try again!
+2023-08-08 01:02:09,615 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/knn_test2/_search [status:200 request:0.010s]
+2023-08-08 01:02:09,615 - search.py[line:54] - WARNING: 'embedding'
+2023-08-08 01:02:09,615 - search.py[line:55] - WARNING: Try again!
+2023-08-08 01:02:09,620 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/knn_test2/_search [status:200 request:0.005s]
+2023-08-08 01:02:09,621 - search.py[line:54] - WARNING: 'embedding'
+2023-08-08 01:02:09,621 - search.py[line:55] - WARNING: Try again!
+2023-08-08 01:02:09,626 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/knn_test2/_search [status:200 request:0.005s]
+2023-08-08 01:02:09,627 - search.py[line:54] - WARNING: 'embedding'
+2023-08-08 01:02:09,627 - search.py[line:55] - WARNING: Try again!
+2023-08-08 01:02:09,633 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/knn_test2/_search [status:200 request:0.006s]
+2023-08-08 01:02:09,633 - search.py[line:54] - WARNING: 'embedding'
+2023-08-08 01:02:09,633 - search.py[line:55] - WARNING: Try again!
+2023-08-08 01:02:09,639 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/knn_test2/_search [status:200 request:0.006s]
+2023-08-08 01:02:09,639 - search.py[line:54] - WARNING: 'embedding'
+2023-08-08 01:02:09,639 - search.py[line:55] - WARNING: Try again!
+2023-08-08 01:02:09,643 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/knn_test2/_search [status:200 request:0.004s]
+2023-08-08 01:02:09,644 - search.py[line:54] - WARNING: 'embedding'
+2023-08-08 01:02:09,644 - search.py[line:55] - WARNING: Try again!
+2023-08-08 01:02:09,648 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/knn_test2/_search [status:200 request:0.004s]
+2023-08-08 01:02:09,648 - search.py[line:54] - WARNING: 'embedding'
+2023-08-08 01:02:09,648 - search.py[line:55] - WARNING: Try again!
+2023-08-08 01:02:09,649 - search.py[line:58] - INFO: ReadTimeOutError may not be covered!
+2023-08-08 01:02:36,376 - search.py[line:17] - INFO: Searching ...
+2023-08-08 01:02:36,377 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 01:02:36,390 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 01:02:36,390 - search.py[line:17] - INFO: Searching ...
+2023-08-08 01:02:36,390 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 01:02:47,464 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/knn_test2/_search [status:200 request:0.006s]
+2023-08-08 01:02:47,464 - search.py[line:54] - WARNING: 'embedding'
+2023-08-08 01:02:47,464 - search.py[line:55] - WARNING: Try again!
+2023-08-08 01:02:47,468 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/knn_test2/_search [status:200 request:0.004s]
+2023-08-08 01:02:47,468 - search.py[line:54] - WARNING: 'embedding'
+2023-08-08 01:02:47,468 - search.py[line:55] - WARNING: Try again!
+2023-08-08 01:02:47,473 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/knn_test2/_search [status:200 request:0.005s]
+2023-08-08 01:02:47,473 - search.py[line:54] - WARNING: 'embedding'
+2023-08-08 01:02:47,473 - search.py[line:55] - WARNING: Try again!
+2023-08-08 01:02:47,477 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/knn_test2/_search [status:200 request:0.004s]
+2023-08-08 01:02:47,477 - search.py[line:54] - WARNING: 'embedding'
+2023-08-08 01:02:47,477 - search.py[line:55] - WARNING: Try again!
+2023-08-08 01:02:47,482 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/knn_test2/_search [status:200 request:0.005s]
+2023-08-08 01:02:47,483 - search.py[line:54] - WARNING: 'embedding'
+2023-08-08 01:02:47,483 - search.py[line:55] - WARNING: Try again!
+2023-08-08 01:02:47,487 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/knn_test2/_search [status:200 request:0.003s]
+2023-08-08 01:02:47,487 - search.py[line:54] - WARNING: 'embedding'
+2023-08-08 01:02:47,487 - search.py[line:55] - WARNING: Try again!
+2023-08-08 01:02:47,491 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/knn_test2/_search [status:200 request:0.004s]
+2023-08-08 01:02:47,491 - search.py[line:54] - WARNING: 'embedding'
+2023-08-08 01:02:47,491 - search.py[line:55] - WARNING: Try again!
+2023-08-08 01:02:47,494 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/knn_test2/_search [status:200 request:0.003s]
+2023-08-08 01:02:47,495 - search.py[line:54] - WARNING: 'embedding'
+2023-08-08 01:02:47,495 - search.py[line:55] - WARNING: Try again!
+2023-08-08 01:02:47,499 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/knn_test2/_search [status:200 request:0.004s]
+2023-08-08 01:02:47,499 - search.py[line:54] - WARNING: 'embedding'
+2023-08-08 01:02:47,499 - search.py[line:55] - WARNING: Try again!
+2023-08-08 01:02:47,503 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/knn_test2/_search [status:200 request:0.004s]
+2023-08-08 01:02:47,503 - search.py[line:54] - WARNING: 'embedding'
+2023-08-08 01:02:47,503 - search.py[line:55] - WARNING: Try again!
+2023-08-08 01:02:47,503 - search.py[line:58] - INFO: ReadTimeOutError may not be covered!
+2023-08-08 01:03:29,712 - powerbi.py[line:22] - WARNING: Could not import azure.core python package.
+2023-08-08 01:03:30,345 - utils.py[line:148] - INFO: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-08-08 01:03:30,345 - utils.py[line:160] - INFO: NumExpr defaulting to 8 threads.
+2023-08-08 01:03:30,547 - search.py[line:17] - INFO: Searching ...
+2023-08-08 01:03:30,547 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 01:03:30,547 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 01:03:30,547 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 01:03:33,069 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 01:03:33,070 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 01:03:34,179 - index_hnsw.py[line:93] - INFO: creating knn_test2 index ...
+2023-08-08 01:03:34,268 - base.py[line:81] - INFO: DELETE http://127.0.0.1:9200/knn_test2 [status:200 request:0.089s]
+2023-08-08 01:03:34,274 - base.py[line:95] - WARNING: PUT http://127.0.0.1:9200/knn_test2 [status:400 request:0.006s]
+2023-08-08 01:03:34,274 - index_hnsw.py[line:120] - WARNING: TransportError(400, 'mapper_parsing_exception', 'unknown parameter [similarity ] on mapper [embedding] of type [dense_vector]')
+2023-08-08 01:03:34,294 - index_hnsw.py[line:124] - INFO: Bulk index for question
+2023-08-08 01:03:34,568 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.266s]
+2023-08-08 01:03:34,602 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.028s]
+2023-08-08 01:03:34,631 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.024s]
+2023-08-08 01:03:34,665 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.028s]
+2023-08-08 01:03:34,699 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.028s]
+2023-08-08 01:03:34,737 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.031s]
+2023-08-08 01:03:34,769 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.025s]
+2023-08-08 01:03:34,798 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.023s]
+2023-08-08 01:03:34,824 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.018s]
+2023-08-08 01:03:34,850 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.020s]
+2023-08-08 01:03:34,874 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.017s]
+2023-08-08 01:03:34,886 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.009s]
+2023-08-08 01:03:34,887 - index_hnsw.py[line:145] - INFO: Bulk index: 5725
+2023-08-08 01:03:46,493 - search.py[line:17] - INFO: Searching ...
+2023-08-08 01:03:46,493 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 01:03:46,507 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 01:03:46,507 - search.py[line:17] - INFO: Searching ...
+2023-08-08 01:03:46,507 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 01:03:49,120 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/knn_test2/_search [status:200 request:0.006s]
+2023-08-08 01:03:49,120 - search.py[line:54] - WARNING: 'embedding'
+2023-08-08 01:03:49,120 - search.py[line:55] - WARNING: Try again!
+2023-08-08 01:03:49,126 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/knn_test2/_search [status:200 request:0.006s]
+2023-08-08 01:03:49,126 - search.py[line:54] - WARNING: 'embedding'
+2023-08-08 01:03:49,126 - search.py[line:55] - WARNING: Try again!
+2023-08-08 01:03:49,131 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/knn_test2/_search [status:200 request:0.005s]
+2023-08-08 01:03:49,131 - search.py[line:54] - WARNING: 'embedding'
+2023-08-08 01:03:49,131 - search.py[line:55] - WARNING: Try again!
+2023-08-08 01:03:49,135 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/knn_test2/_search [status:200 request:0.004s]
+2023-08-08 01:03:49,135 - search.py[line:54] - WARNING: 'embedding'
+2023-08-08 01:03:49,135 - search.py[line:55] - WARNING: Try again!
+2023-08-08 01:03:49,139 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/knn_test2/_search [status:200 request:0.004s]
+2023-08-08 01:03:49,139 - search.py[line:54] - WARNING: 'embedding'
+2023-08-08 01:03:49,139 - search.py[line:55] - WARNING: Try again!
+2023-08-08 01:03:49,143 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/knn_test2/_search [status:200 request:0.004s]
+2023-08-08 01:03:49,143 - search.py[line:54] - WARNING: 'embedding'
+2023-08-08 01:03:49,143 - search.py[line:55] - WARNING: Try again!
+2023-08-08 01:03:49,147 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/knn_test2/_search [status:200 request:0.004s]
+2023-08-08 01:03:49,148 - search.py[line:54] - WARNING: 'embedding'
+2023-08-08 01:03:49,148 - search.py[line:55] - WARNING: Try again!
+2023-08-08 01:03:49,151 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/knn_test2/_search [status:200 request:0.003s]
+2023-08-08 01:03:49,151 - search.py[line:54] - WARNING: 'embedding'
+2023-08-08 01:03:49,151 - search.py[line:55] - WARNING: Try again!
+2023-08-08 01:03:49,155 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/knn_test2/_search [status:200 request:0.004s]
+2023-08-08 01:03:49,155 - search.py[line:54] - WARNING: 'embedding'
+2023-08-08 01:03:49,155 - search.py[line:55] - WARNING: Try again!
+2023-08-08 01:03:49,159 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/knn_test2/_search [status:200 request:0.003s]
+2023-08-08 01:03:49,159 - search.py[line:54] - WARNING: 'embedding'
+2023-08-08 01:03:49,159 - search.py[line:55] - WARNING: Try again!
+2023-08-08 01:03:49,159 - search.py[line:58] - INFO: ReadTimeOutError may not be covered!
+2023-08-08 01:03:51,677 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/knn_test2/_search [status:200 request:0.004s]
+2023-08-08 01:03:51,677 - search.py[line:54] - WARNING: 'embedding'
+2023-08-08 01:03:51,677 - search.py[line:55] - WARNING: Try again!
+2023-08-08 01:03:51,681 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/knn_test2/_search [status:200 request:0.004s]
+2023-08-08 01:03:51,681 - search.py[line:54] - WARNING: 'embedding'
+2023-08-08 01:03:51,681 - search.py[line:55] - WARNING: Try again!
+2023-08-08 01:03:51,684 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/knn_test2/_search [status:200 request:0.003s]
+2023-08-08 01:03:51,684 - search.py[line:54] - WARNING: 'embedding'
+2023-08-08 01:03:51,684 - search.py[line:55] - WARNING: Try again!
+2023-08-08 01:03:51,688 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/knn_test2/_search [status:200 request:0.003s]
+2023-08-08 01:03:51,688 - search.py[line:54] - WARNING: 'embedding'
+2023-08-08 01:03:51,688 - search.py[line:55] - WARNING: Try again!
+2023-08-08 01:03:51,691 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/knn_test2/_search [status:200 request:0.003s]
+2023-08-08 01:03:51,692 - search.py[line:54] - WARNING: 'embedding'
+2023-08-08 01:03:51,692 - search.py[line:55] - WARNING: Try again!
+2023-08-08 01:03:51,695 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/knn_test2/_search [status:200 request:0.003s]
+2023-08-08 01:03:51,695 - search.py[line:54] - WARNING: 'embedding'
+2023-08-08 01:03:51,695 - search.py[line:55] - WARNING: Try again!
+2023-08-08 01:03:51,699 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/knn_test2/_search [status:200 request:0.004s]
+2023-08-08 01:03:51,699 - search.py[line:54] - WARNING: 'embedding'
+2023-08-08 01:03:51,699 - search.py[line:55] - WARNING: Try again!
+2023-08-08 01:03:51,703 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/knn_test2/_search [status:200 request:0.004s]
+2023-08-08 01:03:51,703 - search.py[line:54] - WARNING: 'embedding'
+2023-08-08 01:03:51,703 - search.py[line:55] - WARNING: Try again!
+2023-08-08 01:03:51,706 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/knn_test2/_search [status:200 request:0.003s]
+2023-08-08 01:03:51,706 - search.py[line:54] - WARNING: 'embedding'
+2023-08-08 01:03:51,706 - search.py[line:55] - WARNING: Try again!
+2023-08-08 01:03:51,709 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/knn_test2/_search [status:200 request:0.003s]
+2023-08-08 01:03:51,709 - search.py[line:54] - WARNING: 'embedding'
+2023-08-08 01:03:51,709 - search.py[line:55] - WARNING: Try again!
+2023-08-08 01:03:51,709 - search.py[line:58] - INFO: ReadTimeOutError may not be covered!
+2023-08-08 01:05:19,862 - powerbi.py[line:22] - WARNING: Could not import azure.core python package.
+2023-08-08 01:05:20,482 - utils.py[line:148] - INFO: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-08-08 01:05:20,482 - utils.py[line:160] - INFO: NumExpr defaulting to 8 threads.
+2023-08-08 01:05:20,686 - search.py[line:17] - INFO: Searching ...
+2023-08-08 01:05:20,686 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 01:05:20,686 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 01:05:20,686 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 01:05:23,066 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 01:05:23,066 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 01:05:24,133 - index_hnsw.py[line:93] - INFO: creating knn_test2 index ...
+2023-08-08 01:05:24,200 - base.py[line:81] - INFO: DELETE http://127.0.0.1:9200/knn_test2 [status:200 request:0.067s]
+2023-08-08 01:05:24,205 - base.py[line:95] - WARNING: PUT http://127.0.0.1:9200/knn_test2 [status:400 request:0.005s]
+2023-08-08 01:05:24,205 - index_hnsw.py[line:120] - WARNING: TransportError(400, 'mapper_parsing_exception', 'unknown parameter [similarity ] on mapper [embedding] of type [dense_vector]')
+2023-08-08 01:05:24,225 - index_hnsw.py[line:124] - INFO: Bulk index for question
+2023-08-08 01:05:24,478 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.245s]
+2023-08-08 01:05:24,504 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.018s]
+2023-08-08 01:05:24,527 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.017s]
+2023-08-08 01:05:24,551 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.016s]
+2023-08-08 01:05:24,573 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.015s]
+2023-08-08 01:05:24,599 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.020s]
+2023-08-08 01:05:24,620 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.014s]
+2023-08-08 01:05:24,641 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.015s]
+2023-08-08 01:05:24,659 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.012s]
+2023-08-08 01:05:24,678 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.012s]
+2023-08-08 01:05:24,697 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 01:05:24,706 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.006s]
+2023-08-08 01:05:24,707 - index_hnsw.py[line:145] - INFO: Bulk index: 5725
+2023-08-08 01:05:28,456 - search.py[line:17] - INFO: Searching ...
+2023-08-08 01:05:28,456 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 01:05:28,469 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 01:05:28,469 - search.py[line:17] - INFO: Searching ...
+2023-08-08 01:05:28,469 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 01:05:30,645 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/knn_test2/_search [status:200 request:0.004s]
+2023-08-08 01:05:41,642 - powerbi.py[line:22] - WARNING: Could not import azure.core python package.
+2023-08-08 01:05:42,262 - utils.py[line:148] - INFO: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-08-08 01:05:42,262 - utils.py[line:160] - INFO: NumExpr defaulting to 8 threads.
+2023-08-08 01:05:42,465 - search.py[line:17] - INFO: Searching ...
+2023-08-08 01:05:42,465 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 01:05:42,466 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 01:05:42,466 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 01:05:44,884 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 01:05:44,885 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 01:05:46,019 - index_hnsw.py[line:93] - INFO: creating knn_test2 index ...
+2023-08-08 01:05:46,094 - base.py[line:81] - INFO: DELETE http://127.0.0.1:9200/knn_test2 [status:200 request:0.076s]
+2023-08-08 01:05:46,099 - base.py[line:95] - WARNING: PUT http://127.0.0.1:9200/knn_test2 [status:400 request:0.005s]
+2023-08-08 01:05:46,099 - index_hnsw.py[line:120] - WARNING: TransportError(400, 'mapper_parsing_exception', 'unknown parameter [similarity ] on mapper [embedding] of type [dense_vector]')
+2023-08-08 01:05:46,148 - index_hnsw.py[line:124] - INFO: Bulk index for question
+2023-08-08 01:05:46,402 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.246s]
+2023-08-08 01:05:46,424 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.015s]
+2023-08-08 01:05:46,445 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.013s]
+2023-08-08 01:05:46,465 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.013s]
+2023-08-08 01:05:46,482 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 01:05:46,502 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.014s]
+2023-08-08 01:05:46,519 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 01:05:46,536 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 01:05:46,552 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.010s]
+2023-08-08 01:05:46,570 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 01:05:46,586 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.010s]
+2023-08-08 01:05:46,597 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.006s]
+2023-08-08 01:05:46,597 - index_hnsw.py[line:145] - INFO: Bulk index: 5725
+2023-08-08 01:06:09,068 - powerbi.py[line:22] - WARNING: Could not import azure.core python package.
+2023-08-08 01:06:09,693 - utils.py[line:148] - INFO: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-08-08 01:06:09,693 - utils.py[line:160] - INFO: NumExpr defaulting to 8 threads.
+2023-08-08 01:06:09,892 - search.py[line:17] - INFO: Searching ...
+2023-08-08 01:06:09,892 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 01:06:09,892 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 01:06:09,892 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 01:06:12,526 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 01:06:12,526 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 01:06:13,583 - index_hnsw.py[line:93] - INFO: creating knn_test2 index ...
+2023-08-08 01:06:13,656 - base.py[line:81] - INFO: DELETE http://127.0.0.1:9200/knn_test2 [status:200 request:0.073s]
+2023-08-08 01:06:13,661 - base.py[line:95] - WARNING: PUT http://127.0.0.1:9200/knn_test2 [status:400 request:0.005s]
+2023-08-08 01:06:13,661 - index_hnsw.py[line:120] - WARNING: TransportError(400, 'mapper_parsing_exception', 'unknown parameter [similarity ] on mapper [embedding] of type [dense_vector]')
+2023-08-08 01:06:13,706 - index_hnsw.py[line:124] - INFO: Bulk index for question
+2023-08-08 01:06:13,971 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.256s]
+2023-08-08 01:06:14,000 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.022s]
+2023-08-08 01:06:14,024 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.018s]
+2023-08-08 01:06:14,046 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.016s]
+2023-08-08 01:06:14,069 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.017s]
+2023-08-08 01:06:14,102 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.026s]
+2023-08-08 01:06:14,125 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.017s]
+2023-08-08 01:06:14,148 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.017s]
+2023-08-08 01:06:14,168 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.015s]
+2023-08-08 01:06:14,189 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.015s]
+2023-08-08 01:06:14,211 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.016s]
+2023-08-08 01:06:14,223 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.009s]
+2023-08-08 01:06:14,224 - index_hnsw.py[line:145] - INFO: Bulk index: 5725
+2023-08-08 01:06:39,633 - powerbi.py[line:22] - WARNING: Could not import azure.core python package.
+2023-08-08 01:06:40,262 - utils.py[line:148] - INFO: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-08-08 01:06:40,262 - utils.py[line:160] - INFO: NumExpr defaulting to 8 threads.
+2023-08-08 01:06:40,460 - search.py[line:17] - INFO: Searching ...
+2023-08-08 01:06:40,460 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 01:06:40,461 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 01:06:40,461 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 01:06:42,823 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 01:06:42,823 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 01:06:43,881 - index_hnsw.py[line:93] - INFO: creating knn_test2 index ...
+2023-08-08 01:06:43,960 - base.py[line:81] - INFO: DELETE http://127.0.0.1:9200/knn_test2 [status:200 request:0.079s]
+2023-08-08 01:06:43,965 - base.py[line:95] - WARNING: PUT http://127.0.0.1:9200/knn_test2 [status:400 request:0.005s]
+2023-08-08 01:06:43,966 - index_hnsw.py[line:120] - WARNING: TransportError(400, 'mapper_parsing_exception', 'unknown parameter [similarity ] on mapper [embedding] of type [dense_vector]')
+2023-08-08 01:06:44,013 - index_hnsw.py[line:124] - INFO: Bulk index for question
+2023-08-08 01:06:44,296 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.262s]
+2023-08-08 01:06:44,320 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.018s]
+2023-08-08 01:06:44,344 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.018s]
+2023-08-08 01:06:44,367 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.017s]
+2023-08-08 01:06:44,390 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.016s]
+2023-08-08 01:06:44,428 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.031s]
+2023-08-08 01:06:44,463 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.025s]
+2023-08-08 01:06:44,498 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.024s]
+2023-08-08 01:06:44,526 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.016s]
+2023-08-08 01:06:44,548 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.016s]
+2023-08-08 01:06:44,569 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.015s]
+2023-08-08 01:06:44,581 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.008s]
+2023-08-08 01:06:44,582 - index_hnsw.py[line:146] - INFO: Bulk index: 5725
+2023-08-08 01:07:53,536 - powerbi.py[line:22] - WARNING: Could not import azure.core python package.
+2023-08-08 01:07:54,156 - utils.py[line:148] - INFO: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-08-08 01:07:54,156 - utils.py[line:160] - INFO: NumExpr defaulting to 8 threads.
+2023-08-08 01:07:54,354 - search.py[line:17] - INFO: Searching ...
+2023-08-08 01:07:54,354 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 01:07:54,354 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 01:07:54,354 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 01:07:56,916 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 01:07:56,917 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 01:07:57,979 - index_hnsw.py[line:93] - INFO: creating knn_test2 index ...
+2023-08-08 01:07:58,083 - base.py[line:81] - INFO: DELETE http://127.0.0.1:9200/knn_test2 [status:200 request:0.104s]
+2023-08-08 01:07:58,088 - base.py[line:95] - WARNING: PUT http://127.0.0.1:9200/knn_test2 [status:400 request:0.005s]
+2023-08-08 01:07:58,088 - index_hnsw.py[line:120] - WARNING: TransportError(400, 'mapper_parsing_exception', 'unknown parameter [similarity ] on mapper [embedding] of type [dense_vector]')
+2023-08-08 01:07:58,132 - index_hnsw.py[line:124] - INFO: Bulk index for question
+2023-08-08 01:07:58,393 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.254s]
+2023-08-08 01:07:58,420 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.018s]
+2023-08-08 01:07:58,444 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.017s]
+2023-08-08 01:07:58,465 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.014s]
+2023-08-08 01:07:58,483 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.012s]
+2023-08-08 01:07:58,503 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.015s]
+2023-08-08 01:07:58,519 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.010s]
+2023-08-08 01:07:58,535 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.010s]
+2023-08-08 01:07:58,550 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.009s]
+2023-08-08 01:07:58,566 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.010s]
+2023-08-08 01:07:58,582 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.009s]
+2023-08-08 01:07:58,592 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.006s]
+2023-08-08 01:07:58,593 - index_hnsw.py[line:146] - INFO: Bulk index: 5725
+2023-08-08 01:08:05,827 - search.py[line:17] - INFO: Searching ...
+2023-08-08 01:08:05,827 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 01:08:05,840 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 01:08:05,840 - search.py[line:17] - INFO: Searching ...
+2023-08-08 01:08:05,840 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 01:08:29,262 - search.py[line:17] - INFO: Searching ...
+2023-08-08 01:08:29,262 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 01:08:29,275 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 01:08:29,275 - search.py[line:17] - INFO: Searching ...
+2023-08-08 01:08:29,275 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 01:08:32,136 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/knn_test2/_search [status:200 request:0.006s]
+2023-08-08 01:09:24,487 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/knn_test2/_search [status:200 request:0.006s]
+2023-08-08 01:09:37,845 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/knn_test2/_search [status:200 request:0.004s]
+2023-08-08 01:19:14,645 - powerbi.py[line:22] - WARNING: Could not import azure.core python package.
+2023-08-08 01:19:15,275 - utils.py[line:148] - INFO: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-08-08 01:19:15,275 - utils.py[line:160] - INFO: NumExpr defaulting to 8 threads.
+2023-08-08 01:19:15,471 - search.py[line:17] - INFO: Searching ...
+2023-08-08 01:19:15,471 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 01:19:15,471 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 01:19:15,471 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 01:19:17,909 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 01:19:17,910 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 01:19:19,054 - index_hnsw.py[line:93] - INFO: creating knn_test2 index ...
+2023-08-08 01:19:19,161 - base.py[line:81] - INFO: DELETE http://127.0.0.1:9200/knn_test2 [status:200 request:0.106s]
+2023-08-08 01:19:19,168 - base.py[line:95] - WARNING: PUT http://127.0.0.1:9200/knn_test2 [status:400 request:0.006s]
+2023-08-08 01:19:19,169 - index_hnsw.py[line:120] - WARNING: TransportError(400, 'mapper_parsing_exception', 'unknown parameter [similarity ] on mapper [embedding] of type [dense_vector]')
+2023-08-08 01:19:19,239 - index_hnsw.py[line:124] - INFO: Bulk index for question
+2023-08-08 01:19:19,528 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.282s]
+2023-08-08 01:19:19,546 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.012s]
+2023-08-08 01:19:19,564 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.012s]
+2023-08-08 01:19:19,583 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.013s]
+2023-08-08 01:19:19,600 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 01:19:19,619 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.012s]
+2023-08-08 01:19:19,638 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.013s]
+2023-08-08 01:19:19,656 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.012s]
+2023-08-08 01:19:19,674 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.012s]
+2023-08-08 01:19:19,692 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 01:19:19,711 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.012s]
+2023-08-08 01:19:19,729 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 01:19:19,749 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.012s]
+2023-08-08 01:19:19,767 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.012s]
+2023-08-08 01:19:19,777 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.007s]
+2023-08-08 01:19:19,777 - index_hnsw.py[line:146] - INFO: Bulk index: 7204
+2023-08-08 01:20:08,645 - powerbi.py[line:22] - WARNING: Could not import azure.core python package.
+2023-08-08 01:20:09,266 - utils.py[line:148] - INFO: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-08-08 01:20:09,266 - utils.py[line:160] - INFO: NumExpr defaulting to 8 threads.
+2023-08-08 01:20:09,463 - search.py[line:17] - INFO: Searching ...
+2023-08-08 01:20:09,463 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 01:20:09,464 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 01:20:09,464 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 01:20:11,864 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 01:20:11,864 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 01:20:12,916 - index_hnsw.py[line:93] - INFO: creating knn_test2 index ...
+2023-08-08 01:20:13,003 - base.py[line:81] - INFO: DELETE http://127.0.0.1:9200/knn_test2 [status:200 request:0.085s]
+2023-08-08 01:20:13,007 - base.py[line:95] - WARNING: PUT http://127.0.0.1:9200/knn_test2 [status:400 request:0.004s]
+2023-08-08 01:20:13,007 - index_hnsw.py[line:120] - WARNING: TransportError(400, 'mapper_parsing_exception', 'unknown parameter [similarity ] on mapper [embedding] of type [dense_vector]')
+2023-08-08 01:20:13,060 - index_hnsw.py[line:124] - INFO: Bulk index for question
+2023-08-08 01:20:13,302 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.236s]
+2023-08-08 01:20:13,324 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.016s]
+2023-08-08 01:20:13,345 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.013s]
+2023-08-08 01:20:13,363 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 01:20:13,382 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.012s]
+2023-08-08 01:20:13,401 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.013s]
+2023-08-08 01:20:13,419 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.012s]
+2023-08-08 01:20:13,436 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 01:20:13,453 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 01:20:13,469 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.010s]
+2023-08-08 01:20:13,486 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 01:20:13,503 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 01:20:13,517 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.009s]
+2023-08-08 01:20:13,519 - index_hnsw.py[line:146] - INFO: Bulk index: 6349
+2023-08-08 01:20:17,138 - search.py[line:17] - INFO: Searching ...
+2023-08-08 01:20:17,138 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 01:20:17,152 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 01:20:17,152 - search.py[line:17] - INFO: Searching ...
+2023-08-08 01:20:17,152 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 01:20:20,928 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/knn_test2/_search [status:200 request:0.007s]
+2023-08-08 01:20:40,054 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/knn_test2/_search [status:200 request:0.005s]
+2023-08-08 01:43:25,845 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/knn_test2/_search [status:200 request:0.005s]
+2023-08-08 01:43:36,634 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/knn_test2/_search [status:200 request:0.004s]
+2023-08-08 01:51:16,896 - search.py[line:17] - INFO: Searching ...
+2023-08-08 01:51:16,896 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 01:51:16,910 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 01:51:16,911 - search.py[line:17] - INFO: Searching ...
+2023-08-08 01:51:16,911 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 01:51:26,925 - powerbi.py[line:22] - WARNING: Could not import azure.core python package.
+2023-08-08 01:51:27,552 - utils.py[line:148] - INFO: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-08-08 01:51:27,552 - utils.py[line:160] - INFO: NumExpr defaulting to 8 threads.
+2023-08-08 01:51:27,750 - search.py[line:17] - INFO: Searching ...
+2023-08-08 01:51:27,750 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 01:51:27,750 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 01:51:27,751 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 01:51:30,243 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 01:51:30,243 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 01:51:31,283 - index_hnsw.py[line:94] - INFO: creating knn_test2 index ...
+2023-08-08 01:51:31,356 - base.py[line:81] - INFO: DELETE http://127.0.0.1:9200/knn_test2 [status:200 request:0.073s]
+2023-08-08 01:51:31,361 - base.py[line:95] - WARNING: PUT http://127.0.0.1:9200/knn_test2 [status:400 request:0.005s]
+2023-08-08 01:51:31,361 - index_hnsw.py[line:121] - WARNING: TransportError(400, 'mapper_parsing_exception', 'unknown parameter [similarity ] on mapper [embedding] of type [dense_vector]')
+2023-08-08 01:51:31,383 - index_hnsw.py[line:125] - INFO: Bulk index for question
+2023-08-08 01:51:31,601 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.211s]
+2023-08-08 01:51:31,620 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.013s]
+2023-08-08 01:51:31,638 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.012s]
+2023-08-08 01:51:31,655 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 01:51:31,672 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 01:51:31,690 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.012s]
+2023-08-08 01:51:31,707 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 01:51:31,724 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 01:51:31,741 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 01:51:31,757 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.010s]
+2023-08-08 01:51:31,775 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.013s]
+2023-08-08 01:51:31,792 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 01:51:31,806 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.010s]
+2023-08-08 01:51:31,807 - index_hnsw.py[line:147] - INFO: Bulk index: 6349
+2023-08-08 02:05:13,083 - powerbi.py[line:22] - WARNING: Could not import azure.core python package.
+2023-08-08 02:05:13,706 - utils.py[line:148] - INFO: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-08-08 02:05:13,706 - utils.py[line:160] - INFO: NumExpr defaulting to 8 threads.
+2023-08-08 02:05:13,906 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 02:05:13,906 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 02:07:13,134 - powerbi.py[line:22] - WARNING: Could not import azure.core python package.
+2023-08-08 02:07:13,763 - utils.py[line:148] - INFO: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-08-08 02:07:13,763 - utils.py[line:160] - INFO: NumExpr defaulting to 8 threads.
+2023-08-08 02:07:13,979 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 02:07:13,979 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 02:07:13,979 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 02:07:16,383 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 02:07:16,383 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 02:07:17,482 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 02:07:17,482 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 02:07:17,482 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 02:07:18,395 - index_hnsw.py[line:96] - INFO: creating {'document': '长城军工2019年年度报告', 'embedding': 0} index ...
+2023-08-08 02:07:18,405 - base.py[line:81] - INFO: DELETE http://127.0.0.1:9200/%7B%27document%27%3A+%27%E9%95%BF%E5%9F%8E%E5%86%9B%E5%B7%A52019%E5%B9%B4%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A%27,+%27embedding%27%3A+0%7D [status:400 request:0.004s]
+2023-08-08 02:07:18,407 - base.py[line:95] - WARNING: PUT http://127.0.0.1:9200/%7B%27document%27%3A+%27%E9%95%BF%E5%9F%8E%E5%86%9B%E5%B7%A52019%E5%B9%B4%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A%27,+%27embedding%27%3A+0%7D [status:400 request:0.002s]
+2023-08-08 02:07:18,407 - index_hnsw.py[line:123] - WARNING: TransportError(400, 'invalid_index_name_exception', 'Invalid index name [{\'document\':+\'长城军工2019年年度报告\',+\'embedding\':+0}], must not contain the following characters [ , ", *, \\, <, |, ,, >, /, ?]')
+2023-08-08 02:07:31,306 - powerbi.py[line:22] - WARNING: Could not import azure.core python package.
+2023-08-08 02:07:31,931 - utils.py[line:148] - INFO: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-08-08 02:07:31,931 - utils.py[line:160] - INFO: NumExpr defaulting to 8 threads.
+2023-08-08 02:07:32,142 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 02:07:32,143 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 02:07:32,143 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 02:07:34,553 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 02:07:34,553 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 02:07:35,605 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 02:07:35,605 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 02:07:35,605 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 02:07:36,497 - index_hnsw.py[line:96] - INFO: creating {'document': '长城军工2019年年度报告', 'embedding': 0} index ...
+2023-08-08 02:07:36,500 - base.py[line:81] - INFO: DELETE http://127.0.0.1:9200/%7B%27document%27%3A+%27%E9%95%BF%E5%9F%8E%E5%86%9B%E5%B7%A52019%E5%B9%B4%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A%27,+%27embedding%27%3A+0%7D [status:400 request:0.003s]
+2023-08-08 02:07:36,501 - base.py[line:95] - WARNING: PUT http://127.0.0.1:9200/%7B%27document%27%3A+%27%E9%95%BF%E5%9F%8E%E5%86%9B%E5%B7%A52019%E5%B9%B4%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A%27,+%27embedding%27%3A+0%7D [status:400 request:0.001s]
+2023-08-08 02:07:36,501 - index_hnsw.py[line:123] - WARNING: TransportError(400, 'invalid_index_name_exception', 'Invalid index name [{\'document\':+\'长城军工2019年年度报告\',+\'embedding\':+0}], must not contain the following characters [ , ", *, \\, <, |, ,, >, /, ?]')
+2023-08-08 02:07:36,501 - index_hnsw.py[line:127] - INFO: Bulk index for question
+2023-08-08 02:07:36,512 - base.py[line:95] - WARNING: POST http://127.0.0.1:9200/_bulk [status:400 request:0.003s]
+2023-08-08 02:09:05,053 - powerbi.py[line:22] - WARNING: Could not import azure.core python package.
+2023-08-08 02:09:05,726 - utils.py[line:148] - INFO: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-08-08 02:09:05,726 - utils.py[line:160] - INFO: NumExpr defaulting to 8 threads.
+2023-08-08 02:09:05,971 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 02:09:05,971 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 02:09:05,971 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 02:09:08,521 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 02:09:08,522 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 02:09:09,583 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 02:09:09,584 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 02:09:09,584 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 02:09:10,461 - index_hnsw.py[line:96] - INFO: creating {'document': '长城军工2019年年度报告', 'embedding': 0} index ...
+2023-08-08 02:09:10,464 - base.py[line:81] - INFO: DELETE http://127.0.0.1:9200/%7B%27document%27%3A+%27%E9%95%BF%E5%9F%8E%E5%86%9B%E5%B7%A52019%E5%B9%B4%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A%27,+%27embedding%27%3A+0%7D [status:400 request:0.002s]
+2023-08-08 02:09:10,465 - base.py[line:95] - WARNING: PUT http://127.0.0.1:9200/%7B%27document%27%3A+%27%E9%95%BF%E5%9F%8E%E5%86%9B%E5%B7%A52019%E5%B9%B4%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A%27,+%27embedding%27%3A+0%7D [status:400 request:0.001s]
+2023-08-08 02:09:10,465 - index_hnsw.py[line:123] - WARNING: TransportError(400, 'invalid_index_name_exception', 'Invalid index name [{\'document\':+\'长城军工2019年年度报告\',+\'embedding\':+0}], must not contain the following characters [ , ", *, \\, <, |, ,, >, /, ?]')
+2023-08-08 02:09:10,465 - index_hnsw.py[line:127] - INFO: Bulk index for question
+2023-08-08 02:09:10,474 - base.py[line:95] - WARNING: POST http://127.0.0.1:9200/_bulk [status:400 request:0.001s]
+2023-08-08 02:09:43,814 - powerbi.py[line:22] - WARNING: Could not import azure.core python package.
+2023-08-08 02:09:44,449 - utils.py[line:148] - INFO: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-08-08 02:09:44,449 - utils.py[line:160] - INFO: NumExpr defaulting to 8 threads.
+2023-08-08 02:09:44,650 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 02:09:44,652 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 02:09:44,652 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 02:09:47,213 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 02:09:47,214 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 02:09:48,260 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 02:09:48,260 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 02:09:48,260 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 02:09:49,156 - index_hnsw.py[line:96] - INFO: creating {'document': '长城军工2019年年度报告', 'embedding': 0} index ...
+2023-08-08 02:09:49,158 - base.py[line:81] - INFO: DELETE http://127.0.0.1:9200/%7B%27document%27%3A+%27%E9%95%BF%E5%9F%8E%E5%86%9B%E5%B7%A52019%E5%B9%B4%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A%27,+%27embedding%27%3A+0%7D [status:400 request:0.003s]
+2023-08-08 02:09:49,160 - base.py[line:95] - WARNING: PUT http://127.0.0.1:9200/%7B%27document%27%3A+%27%E9%95%BF%E5%9F%8E%E5%86%9B%E5%B7%A52019%E5%B9%B4%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A%27,+%27embedding%27%3A+0%7D [status:400 request:0.001s]
+2023-08-08 02:09:49,160 - index_hnsw.py[line:123] - WARNING: TransportError(400, 'invalid_index_name_exception', 'Invalid index name [{\'document\':+\'长城军工2019年年度报告\',+\'embedding\':+0}], must not contain the following characters [ , ", *, \\, <, |, ,, >, /, ?]')
+2023-08-08 02:09:49,160 - index_hnsw.py[line:127] - INFO: Bulk index for question
+2023-08-08 02:09:49,168 - base.py[line:95] - WARNING: POST http://127.0.0.1:9200/_bulk [status:400 request:0.001s]
+2023-08-08 02:10:14,851 - powerbi.py[line:22] - WARNING: Could not import azure.core python package.
+2023-08-08 02:10:15,546 - utils.py[line:148] - INFO: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-08-08 02:10:15,546 - utils.py[line:160] - INFO: NumExpr defaulting to 8 threads.
+2023-08-08 02:10:15,745 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 02:10:15,745 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 02:10:15,745 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 02:10:18,145 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 02:10:18,145 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 02:10:19,208 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 02:10:19,209 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 02:10:19,209 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 02:10:20,122 - index_hnsw.py[line:96] - INFO: creating {'document': '长城军工2019年年度报告', 'embedding': 0} index ...
+2023-08-08 02:10:20,125 - base.py[line:81] - INFO: DELETE http://127.0.0.1:9200/%7B%27document%27%3A+%27%E9%95%BF%E5%9F%8E%E5%86%9B%E5%B7%A52019%E5%B9%B4%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A%27,+%27embedding%27%3A+0%7D [status:400 request:0.003s]
+2023-08-08 02:10:20,126 - base.py[line:95] - WARNING: PUT http://127.0.0.1:9200/%7B%27document%27%3A+%27%E9%95%BF%E5%9F%8E%E5%86%9B%E5%B7%A52019%E5%B9%B4%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A%27,+%27embedding%27%3A+0%7D [status:400 request:0.001s]
+2023-08-08 02:10:20,126 - index_hnsw.py[line:123] - WARNING: TransportError(400, 'invalid_index_name_exception', 'Invalid index name [{\'document\':+\'长城军工2019年年度报告\',+\'embedding\':+0}], must not contain the following characters [ , ", *, \\, <, |, ,, >, /, ?]')
+2023-08-08 02:10:20,126 - index_hnsw.py[line:127] - INFO: Bulk index for question
+2023-08-08 02:10:20,135 - base.py[line:95] - WARNING: POST http://127.0.0.1:9200/_bulk [status:400 request:0.001s]
+2023-08-08 02:12:01,644 - powerbi.py[line:22] - WARNING: Could not import azure.core python package.
+2023-08-08 02:12:02,271 - utils.py[line:148] - INFO: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-08-08 02:12:02,271 - utils.py[line:160] - INFO: NumExpr defaulting to 8 threads.
+2023-08-08 02:12:02,500 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 02:12:02,500 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 02:12:02,500 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 02:12:04,893 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 02:12:04,893 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 02:12:05,942 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 02:12:05,942 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 02:12:05,942 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 02:12:06,850 - index_hnsw.py[line:96] - INFO: creating {'document': '长城军工2019年年度报告', 'embedding': 0} index ...
+2023-08-08 02:12:06,852 - base.py[line:81] - INFO: DELETE http://127.0.0.1:9200/%7B%27document%27%3A+%27%E9%95%BF%E5%9F%8E%E5%86%9B%E5%B7%A52019%E5%B9%B4%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A%27,+%27embedding%27%3A+0%7D [status:400 request:0.002s]
+2023-08-08 02:12:06,854 - base.py[line:95] - WARNING: PUT http://127.0.0.1:9200/%7B%27document%27%3A+%27%E9%95%BF%E5%9F%8E%E5%86%9B%E5%B7%A52019%E5%B9%B4%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A%27,+%27embedding%27%3A+0%7D [status:400 request:0.001s]
+2023-08-08 02:12:06,854 - index_hnsw.py[line:123] - WARNING: TransportError(400, 'invalid_index_name_exception', 'Invalid index name [{\'document\':+\'长城军工2019年年度报告\',+\'embedding\':+0}], must not contain the following characters [ , ", *, \\, <, |, ,, >, /, ?]')
+2023-08-08 02:12:06,854 - index_hnsw.py[line:127] - INFO: Bulk index for question
+2023-08-08 02:12:06,863 - base.py[line:95] - WARNING: POST http://127.0.0.1:9200/_bulk [status:400 request:0.001s]
+2023-08-08 02:12:20,036 - powerbi.py[line:22] - WARNING: Could not import azure.core python package.
+2023-08-08 02:12:20,702 - utils.py[line:148] - INFO: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-08-08 02:12:20,702 - utils.py[line:160] - INFO: NumExpr defaulting to 8 threads.
+2023-08-08 02:12:20,911 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 02:12:20,911 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 02:12:20,912 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 02:12:23,276 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 02:12:23,277 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 02:12:24,337 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 02:12:24,337 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 02:12:24,337 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 02:12:25,235 - index_hnsw.py[line:96] - INFO: creating {'document': '长城军工2019年年度报告', 'embedding': 0} index ...
+2023-08-08 02:12:25,237 - base.py[line:81] - INFO: DELETE http://127.0.0.1:9200/%7B%27document%27%3A+%27%E9%95%BF%E5%9F%8E%E5%86%9B%E5%B7%A52019%E5%B9%B4%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A%27,+%27embedding%27%3A+0%7D [status:400 request:0.002s]
+2023-08-08 02:12:25,238 - base.py[line:95] - WARNING: PUT http://127.0.0.1:9200/%7B%27document%27%3A+%27%E9%95%BF%E5%9F%8E%E5%86%9B%E5%B7%A52019%E5%B9%B4%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A%27,+%27embedding%27%3A+0%7D [status:400 request:0.002s]
+2023-08-08 02:12:25,238 - index_hnsw.py[line:123] - WARNING: TransportError(400, 'invalid_index_name_exception', 'Invalid index name [{\'document\':+\'长城军工2019年年度报告\',+\'embedding\':+0}], must not contain the following characters [ , ", *, \\, <, |, ,, >, /, ?]')
+2023-08-08 02:12:25,238 - index_hnsw.py[line:127] - INFO: Bulk index for question
+2023-08-08 02:12:25,247 - base.py[line:95] - WARNING: POST http://127.0.0.1:9200/_bulk [status:400 request:0.001s]
+2023-08-08 02:12:52,512 - powerbi.py[line:22] - WARNING: Could not import azure.core python package.
+2023-08-08 02:12:53,137 - utils.py[line:148] - INFO: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-08-08 02:12:53,137 - utils.py[line:160] - INFO: NumExpr defaulting to 8 threads.
+2023-08-08 02:12:53,345 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 02:12:53,345 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 02:12:53,346 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 02:12:55,708 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 02:12:55,708 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 02:12:56,750 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 02:12:56,750 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 02:12:56,750 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 02:12:57,658 - index_hnsw.py[line:95] - INFO: creating {'document': '长城军工2019年年度报告', 'embedding': 0} index ...
+2023-08-08 02:12:57,661 - base.py[line:81] - INFO: DELETE http://127.0.0.1:9200/%7B%27document%27%3A+%27%E9%95%BF%E5%9F%8E%E5%86%9B%E5%B7%A52019%E5%B9%B4%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A%27,+%27embedding%27%3A+0%7D [status:400 request:0.003s]
+2023-08-08 02:12:57,663 - base.py[line:95] - WARNING: PUT http://127.0.0.1:9200/%7B%27document%27%3A+%27%E9%95%BF%E5%9F%8E%E5%86%9B%E5%B7%A52019%E5%B9%B4%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A%27,+%27embedding%27%3A+0%7D [status:400 request:0.001s]
+2023-08-08 02:12:57,663 - index_hnsw.py[line:122] - WARNING: TransportError(400, 'invalid_index_name_exception', 'Invalid index name [{\'document\':+\'长城军工2019年年度报告\',+\'embedding\':+0}], must not contain the following characters [ , ", *, \\, <, |, ,, >, /, ?]')
+2023-08-08 02:12:57,663 - index_hnsw.py[line:126] - INFO: Bulk index for question
+2023-08-08 02:12:57,672 - base.py[line:95] - WARNING: POST http://127.0.0.1:9200/_bulk [status:400 request:0.002s]
+2023-08-08 02:13:23,042 - powerbi.py[line:22] - WARNING: Could not import azure.core python package.
+2023-08-08 02:13:23,664 - utils.py[line:148] - INFO: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-08-08 02:13:23,664 - utils.py[line:160] - INFO: NumExpr defaulting to 8 threads.
+2023-08-08 02:13:23,864 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 02:13:23,864 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 02:13:23,865 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 02:13:26,247 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 02:13:26,247 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 02:13:27,296 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 02:13:27,296 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 02:13:27,296 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 02:13:28,206 - index_hnsw.py[line:95] - INFO: creating 长城军工2019年年度报告 index ...
+2023-08-08 02:13:28,209 - base.py[line:81] - INFO: DELETE http://127.0.0.1:9200/%E9%95%BF%E5%9F%8E%E5%86%9B%E5%B7%A52019%E5%B9%B4%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A [status:404 request:0.003s]
+2023-08-08 02:13:28,215 - base.py[line:95] - WARNING: PUT http://127.0.0.1:9200/%E9%95%BF%E5%9F%8E%E5%86%9B%E5%B7%A52019%E5%B9%B4%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A [status:400 request:0.006s]
+2023-08-08 02:13:28,215 - index_hnsw.py[line:122] - WARNING: TransportError(400, 'mapper_parsing_exception', 'unknown parameter [similarity ] on mapper [embedding] of type [dense_vector]')
+2023-08-08 02:13:28,215 - index_hnsw.py[line:126] - INFO: Bulk index for question
+2023-08-08 02:13:28,455 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.232s]
+2023-08-08 02:13:28,474 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.013s]
+2023-08-08 02:13:28,492 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 02:13:28,510 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.012s]
+2023-08-08 02:13:28,528 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.012s]
+2023-08-08 02:13:28,545 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.012s]
+2023-08-08 02:13:28,563 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.012s]
+2023-08-08 02:13:28,580 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 02:13:28,598 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 02:13:28,614 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.010s]
+2023-08-08 02:13:28,632 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.012s]
+2023-08-08 02:13:28,649 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 02:13:28,663 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.009s]
+2023-08-08 02:13:28,664 - index_hnsw.py[line:148] - INFO: Bulk index: 6349
+2023-08-08 02:13:28,665 - index_hnsw.py[line:95] - INFO: creating filename index ...
+2023-08-08 02:13:28,686 - base.py[line:81] - INFO: DELETE http://127.0.0.1:9200/filename [status:404 request:0.020s]
+2023-08-08 02:13:28,690 - base.py[line:95] - WARNING: PUT http://127.0.0.1:9200/filename [status:400 request:0.004s]
+2023-08-08 02:13:28,690 - index_hnsw.py[line:122] - WARNING: TransportError(400, 'mapper_parsing_exception', 'unknown parameter [similarity ] on mapper [embedding] of type [dense_vector]')
+2023-08-08 02:13:41,408 - powerbi.py[line:22] - WARNING: Could not import azure.core python package.
+2023-08-08 02:13:42,067 - utils.py[line:148] - INFO: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-08-08 02:13:42,067 - utils.py[line:160] - INFO: NumExpr defaulting to 8 threads.
+2023-08-08 02:13:42,281 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 02:13:42,282 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 02:13:42,282 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 02:13:44,662 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 02:13:44,662 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 02:13:45,706 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 02:13:45,707 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 02:13:45,707 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 02:13:46,621 - index_hnsw.py[line:95] - INFO: creating 长城军工2019年年度报告 index ...
+2023-08-08 02:13:46,706 - base.py[line:81] - INFO: DELETE http://127.0.0.1:9200/%E9%95%BF%E5%9F%8E%E5%86%9B%E5%B7%A52019%E5%B9%B4%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A [status:200 request:0.085s]
+2023-08-08 02:13:46,712 - base.py[line:95] - WARNING: PUT http://127.0.0.1:9200/%E9%95%BF%E5%9F%8E%E5%86%9B%E5%B7%A52019%E5%B9%B4%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A [status:400 request:0.006s]
+2023-08-08 02:13:46,712 - index_hnsw.py[line:122] - WARNING: TransportError(400, 'mapper_parsing_exception', 'unknown parameter [similarity ] on mapper [embedding] of type [dense_vector]')
+2023-08-08 02:13:46,712 - index_hnsw.py[line:126] - INFO: Bulk index for question
+2023-08-08 02:13:46,974 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.254s]
+2023-08-08 02:13:46,997 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.016s]
+2023-08-08 02:13:47,020 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.016s]
+2023-08-08 02:13:47,042 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.015s]
+2023-08-08 02:13:47,064 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.015s]
+2023-08-08 02:13:47,087 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.017s]
+2023-08-08 02:13:47,110 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.017s]
+2023-08-08 02:13:47,132 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.015s]
+2023-08-08 02:13:47,154 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.016s]
+2023-08-08 02:13:47,176 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.015s]
+2023-08-08 02:13:47,215 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.033s]
+2023-08-08 02:13:47,237 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.016s]
+2023-08-08 02:13:47,254 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.013s]
+2023-08-08 02:13:47,255 - index_hnsw.py[line:148] - INFO: Bulk index: 6349
+2023-08-08 02:13:47,255 - index_hnsw.py[line:95] - INFO: creating filename index ...
+2023-08-08 02:13:47,276 - base.py[line:81] - INFO: DELETE http://127.0.0.1:9200/filename [status:404 request:0.020s]
+2023-08-08 02:13:47,281 - base.py[line:95] - WARNING: PUT http://127.0.0.1:9200/filename [status:400 request:0.005s]
+2023-08-08 02:13:47,281 - index_hnsw.py[line:122] - WARNING: TransportError(400, 'mapper_parsing_exception', 'unknown parameter [similarity ] on mapper [embedding] of type [dense_vector]')
+2023-08-08 02:13:47,281 - index_hnsw.py[line:126] - INFO: Bulk index for question
+2023-08-08 02:16:06,822 - powerbi.py[line:22] - WARNING: Could not import azure.core python package.
+2023-08-08 02:16:07,442 - utils.py[line:148] - INFO: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-08-08 02:16:07,442 - utils.py[line:160] - INFO: NumExpr defaulting to 8 threads.
+2023-08-08 02:16:07,646 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 02:16:07,646 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 02:16:07,646 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 02:16:10,006 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 02:16:10,006 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 02:17:44,575 - powerbi.py[line:22] - WARNING: Could not import azure.core python package.
+2023-08-08 02:17:45,223 - utils.py[line:148] - INFO: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-08-08 02:17:45,223 - utils.py[line:160] - INFO: NumExpr defaulting to 8 threads.
+2023-08-08 02:17:45,441 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 02:17:45,441 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 02:17:45,441 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 02:17:47,862 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 02:17:47,862 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 02:18:28,030 - powerbi.py[line:22] - WARNING: Could not import azure.core python package.
+2023-08-08 02:18:28,692 - utils.py[line:148] - INFO: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-08-08 02:18:28,692 - utils.py[line:160] - INFO: NumExpr defaulting to 8 threads.
+2023-08-08 02:18:28,905 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 02:18:28,905 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 02:18:28,905 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 02:18:31,285 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 02:18:31,285 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 02:18:54,085 - powerbi.py[line:22] - WARNING: Could not import azure.core python package.
+2023-08-08 02:18:54,785 - utils.py[line:148] - INFO: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-08-08 02:18:54,785 - utils.py[line:160] - INFO: NumExpr defaulting to 8 threads.
+2023-08-08 02:18:54,998 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 02:18:54,999 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 02:18:54,999 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 02:18:57,393 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 02:18:57,393 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 02:19:24,146 - powerbi.py[line:22] - WARNING: Could not import azure.core python package.
+2023-08-08 02:19:24,777 - utils.py[line:148] - INFO: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-08-08 02:19:24,777 - utils.py[line:160] - INFO: NumExpr defaulting to 8 threads.
+2023-08-08 02:19:24,975 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 02:19:24,975 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 02:19:24,975 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 02:19:27,350 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 02:19:27,350 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 02:20:23,145 - powerbi.py[line:22] - WARNING: Could not import azure.core python package.
+2023-08-08 02:20:23,767 - utils.py[line:148] - INFO: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-08-08 02:20:23,767 - utils.py[line:160] - INFO: NumExpr defaulting to 8 threads.
+2023-08-08 02:20:23,968 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 02:20:23,969 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 02:20:23,969 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 02:20:26,339 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 02:20:26,340 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 02:21:00,073 - powerbi.py[line:22] - WARNING: Could not import azure.core python package.
+2023-08-08 02:21:00,705 - utils.py[line:148] - INFO: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-08-08 02:21:00,705 - utils.py[line:160] - INFO: NumExpr defaulting to 8 threads.
+2023-08-08 02:21:00,902 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 02:21:00,903 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 02:21:00,903 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 02:21:03,258 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 02:21:03,259 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 02:21:15,452 - powerbi.py[line:22] - WARNING: Could not import azure.core python package.
+2023-08-08 02:21:16,072 - utils.py[line:148] - INFO: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-08-08 02:21:16,072 - utils.py[line:160] - INFO: NumExpr defaulting to 8 threads.
+2023-08-08 02:21:16,273 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 02:21:16,273 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 02:21:16,273 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 02:21:18,674 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 02:21:18,674 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 02:21:19,763 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 02:21:19,763 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 02:21:19,763 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 02:21:20,688 - index_hnsw.py[line:96] - INFO: creating 长城军工2019年年度报告 index ...
+2023-08-08 02:21:20,782 - base.py[line:81] - INFO: DELETE http://127.0.0.1:9200/%E9%95%BF%E5%9F%8E%E5%86%9B%E5%B7%A52019%E5%B9%B4%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A [status:200 request:0.093s]
+2023-08-08 02:21:20,787 - base.py[line:95] - WARNING: PUT http://127.0.0.1:9200/%E9%95%BF%E5%9F%8E%E5%86%9B%E5%B7%A52019%E5%B9%B4%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A [status:400 request:0.005s]
+2023-08-08 02:21:20,788 - index_hnsw.py[line:123] - WARNING: TransportError(400, 'mapper_parsing_exception', 'unknown parameter [similarity ] on mapper [embedding] of type [dense_vector]')
+2023-08-08 02:21:20,788 - index_hnsw.py[line:127] - INFO: Bulk index for question
+2023-08-08 02:21:21,024 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.230s]
+2023-08-08 02:21:21,045 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.015s]
+2023-08-08 02:21:21,065 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.014s]
+2023-08-08 02:21:21,084 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.013s]
+2023-08-08 02:21:21,104 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.014s]
+2023-08-08 02:21:21,124 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.014s]
+2023-08-08 02:21:21,144 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.014s]
+2023-08-08 02:21:21,162 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.012s]
+2023-08-08 02:21:21,180 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.012s]
+2023-08-08 02:21:21,198 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.012s]
+2023-08-08 02:21:21,218 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.014s]
+2023-08-08 02:21:21,235 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 02:21:21,251 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 02:21:21,252 - index_hnsw.py[line:149] - INFO: Bulk index: 6349
+2023-08-08 02:21:21,252 - index_hnsw.py[line:96] - INFO: creating filename index ...
+2023-08-08 02:21:21,265 - base.py[line:81] - INFO: DELETE http://127.0.0.1:9200/filename [status:404 request:0.014s]
+2023-08-08 02:21:21,271 - base.py[line:95] - WARNING: PUT http://127.0.0.1:9200/filename [status:400 request:0.006s]
+2023-08-08 02:21:21,271 - index_hnsw.py[line:123] - WARNING: TransportError(400, 'mapper_parsing_exception', 'unknown parameter [similarity ] on mapper [embedding] of type [dense_vector]')
+2023-08-08 02:21:21,271 - index_hnsw.py[line:127] - INFO: Bulk index for question
+2023-08-08 02:21:21,492 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.221s]
+2023-08-08 02:21:21,492 - index_hnsw.py[line:149] - INFO: Bulk index: 2
+2023-08-08 02:25:02,943 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 02:25:02,944 - search.py[line:17] - INFO: Searching ...
+2023-08-08 02:25:27,100 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/filename/_search [status:200 request:0.005s]
+2023-08-08 02:26:41,253 - powerbi.py[line:22] - WARNING: Could not import azure.core python package.
+2023-08-08 02:26:41,869 - utils.py[line:148] - INFO: Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-08-08 02:26:41,870 - utils.py[line:160] - INFO: NumExpr defaulting to 8 threads.
+2023-08-08 02:26:42,064 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 02:26:42,064 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 02:26:42,064 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 02:26:44,430 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 02:26:44,430 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 02:26:45,813 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 02:26:45,813 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 02:26:45,813 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 02:26:46,743 - index_hnsw.py[line:96] - INFO: creating 世茂股份2019年年度报告 index ...
+2023-08-08 02:26:46,746 - base.py[line:81] - INFO: DELETE http://127.0.0.1:9200/%E4%B8%96%E8%8C%82%E8%82%A1%E4%BB%BD2019%E5%B9%B4%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A [status:404 request:0.003s]
+2023-08-08 02:26:46,751 - base.py[line:95] - WARNING: PUT http://127.0.0.1:9200/%E4%B8%96%E8%8C%82%E8%82%A1%E4%BB%BD2019%E5%B9%B4%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A [status:400 request:0.005s]
+2023-08-08 02:26:46,751 - index_hnsw.py[line:123] - WARNING: TransportError(400, 'mapper_parsing_exception', 'unknown parameter [similarity ] on mapper [embedding] of type [dense_vector]')
+2023-08-08 02:26:46,751 - index_hnsw.py[line:127] - INFO: Bulk index for question
+2023-08-08 02:26:47,010 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.251s]
+2023-08-08 02:26:47,031 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.013s]
+2023-08-08 02:26:47,051 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.013s]
+2023-08-08 02:26:47,071 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.014s]
+2023-08-08 02:26:47,089 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.012s]
+2023-08-08 02:26:47,108 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.013s]
+2023-08-08 02:26:47,128 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.013s]
+2023-08-08 02:26:47,146 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 02:26:47,164 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.012s]
+2023-08-08 02:26:47,182 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 02:26:47,200 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.013s]
+2023-08-08 02:26:47,218 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.012s]
+2023-08-08 02:26:47,238 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.013s]
+2023-08-08 02:26:47,258 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.014s]
+2023-08-08 02:26:47,269 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.007s]
+2023-08-08 02:26:47,270 - index_hnsw.py[line:149] - INFO: Bulk index: 7204
+2023-08-08 02:26:47,270 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 02:26:47,270 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 02:26:47,270 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 02:26:48,266 - index_hnsw.py[line:96] - INFO: creating 江西铜业2019年年度报告 index ...
+2023-08-08 02:26:48,268 - base.py[line:81] - INFO: DELETE http://127.0.0.1:9200/%E6%B1%9F%E8%A5%BF%E9%93%9C%E4%B8%9A2019%E5%B9%B4%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A [status:404 request:0.001s]
+2023-08-08 02:26:48,273 - base.py[line:95] - WARNING: PUT http://127.0.0.1:9200/%E6%B1%9F%E8%A5%BF%E9%93%9C%E4%B8%9A2019%E5%B9%B4%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A [status:400 request:0.005s]
+2023-08-08 02:26:48,273 - index_hnsw.py[line:123] - WARNING: TransportError(400, 'mapper_parsing_exception', 'unknown parameter [similarity ] on mapper [embedding] of type [dense_vector]')
+2023-08-08 02:26:48,273 - index_hnsw.py[line:127] - INFO: Bulk index for question
+2023-08-08 02:26:48,522 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.240s]
+2023-08-08 02:26:48,542 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.013s]
+2023-08-08 02:26:48,561 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.012s]
+2023-08-08 02:26:48,580 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.012s]
+2023-08-08 02:26:48,598 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.012s]
+2023-08-08 02:26:48,617 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.012s]
+2023-08-08 02:26:48,635 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.012s]
+2023-08-08 02:26:48,652 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 02:26:48,670 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.010s]
+2023-08-08 02:26:48,687 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 02:26:48,703 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.010s]
+2023-08-08 02:26:48,720 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 02:26:48,738 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.010s]
+2023-08-08 02:26:48,754 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.010s]
+2023-08-08 02:26:48,770 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.009s]
+2023-08-08 02:26:48,788 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.010s]
+2023-08-08 02:26:48,804 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.010s]
+2023-08-08 02:26:48,821 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 02:26:48,838 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.010s]
+2023-08-08 02:26:48,855 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 02:26:48,874 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 02:26:48,891 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 02:26:48,909 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 02:26:48,927 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 02:26:48,945 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 02:26:48,962 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.010s]
+2023-08-08 02:26:48,970 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.005s]
+2023-08-08 02:26:48,970 - index_hnsw.py[line:149] - INFO: Bulk index: 13103
+2023-08-08 02:26:48,971 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 02:26:48,971 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 02:26:48,971 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 02:26:49,913 - index_hnsw.py[line:96] - INFO: creating 航发控制2019年年度报告 index ...
+2023-08-08 02:26:49,915 - base.py[line:81] - INFO: DELETE http://127.0.0.1:9200/%E8%88%AA%E5%8F%91%E6%8E%A7%E5%88%B62019%E5%B9%B4%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A [status:404 request:0.001s]
+2023-08-08 02:26:49,922 - base.py[line:95] - WARNING: PUT http://127.0.0.1:9200/%E8%88%AA%E5%8F%91%E6%8E%A7%E5%88%B62019%E5%B9%B4%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A [status:400 request:0.007s]
+2023-08-08 02:26:49,922 - index_hnsw.py[line:123] - WARNING: TransportError(400, 'mapper_parsing_exception', 'unknown parameter [similarity ] on mapper [embedding] of type [dense_vector]')
+2023-08-08 02:26:49,922 - index_hnsw.py[line:127] - INFO: Bulk index for question
+2023-08-08 02:26:50,163 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.234s]
+2023-08-08 02:26:50,184 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.014s]
+2023-08-08 02:26:50,204 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.013s]
+2023-08-08 02:26:50,222 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.012s]
+2023-08-08 02:26:50,239 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 02:26:50,261 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.016s]
+2023-08-08 02:26:50,279 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.012s]
+2023-08-08 02:26:50,296 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.012s]
+2023-08-08 02:26:50,313 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 02:26:50,369 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.051s]
+2023-08-08 02:26:50,389 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.014s]
+2023-08-08 02:26:50,498 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.008s]
+2023-08-08 02:26:50,499 - index_hnsw.py[line:149] - INFO: Bulk index: 5725
+2023-08-08 02:26:50,499 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 02:26:50,499 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 02:26:50,499 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 02:26:51,448 - index_hnsw.py[line:96] - INFO: creating 长城军工2019年年度报告 index ...
+2023-08-08 02:26:51,537 - base.py[line:81] - INFO: DELETE http://127.0.0.1:9200/%E9%95%BF%E5%9F%8E%E5%86%9B%E5%B7%A52019%E5%B9%B4%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A [status:200 request:0.089s]
+2023-08-08 02:26:51,541 - base.py[line:95] - WARNING: PUT http://127.0.0.1:9200/%E9%95%BF%E5%9F%8E%E5%86%9B%E5%B7%A52019%E5%B9%B4%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A [status:400 request:0.004s]
+2023-08-08 02:26:51,541 - index_hnsw.py[line:123] - WARNING: TransportError(400, 'mapper_parsing_exception', 'unknown parameter [similarity ] on mapper [embedding] of type [dense_vector]')
+2023-08-08 02:26:51,541 - index_hnsw.py[line:127] - INFO: Bulk index for question
+2023-08-08 02:26:51,852 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.303s]
+2023-08-08 02:26:51,873 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.015s]
+2023-08-08 02:26:51,894 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.014s]
+2023-08-08 02:26:51,917 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.015s]
+2023-08-08 02:26:51,936 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.013s]
+2023-08-08 02:26:51,959 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.016s]
+2023-08-08 02:26:51,982 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.015s]
+2023-08-08 02:26:52,003 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.015s]
+2023-08-08 02:26:52,027 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.017s]
+2023-08-08 02:26:52,048 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.015s]
+2023-08-08 02:26:52,071 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.016s]
+2023-08-08 02:26:52,093 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.015s]
+2023-08-08 02:26:52,110 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.012s]
+2023-08-08 02:26:52,111 - index_hnsw.py[line:149] - INFO: Bulk index: 6349
+2023-08-08 02:26:52,111 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 02:26:52,111 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 02:26:52,112 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 02:26:53,063 - index_hnsw.py[line:96] - INFO: creating 天顺风能2020年年度报告 index ...
+2023-08-08 02:26:53,065 - base.py[line:81] - INFO: DELETE http://127.0.0.1:9200/%E5%A4%A9%E9%A1%BA%E9%A3%8E%E8%83%BD2020%E5%B9%B4%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A [status:404 request:0.002s]
+2023-08-08 02:26:53,069 - base.py[line:95] - WARNING: PUT http://127.0.0.1:9200/%E5%A4%A9%E9%A1%BA%E9%A3%8E%E8%83%BD2020%E5%B9%B4%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A [status:400 request:0.004s]
+2023-08-08 02:26:53,069 - index_hnsw.py[line:123] - WARNING: TransportError(400, 'mapper_parsing_exception', 'unknown parameter [similarity ] on mapper [embedding] of type [dense_vector]')
+2023-08-08 02:26:53,069 - index_hnsw.py[line:127] - INFO: Bulk index for question
+2023-08-08 02:26:53,328 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.251s]
+2023-08-08 02:26:53,349 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.014s]
+2023-08-08 02:26:53,368 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.013s]
+2023-08-08 02:26:53,385 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 02:26:53,404 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 02:26:53,425 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.014s]
+2023-08-08 02:26:53,443 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.012s]
+2023-08-08 02:26:53,460 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 02:26:53,477 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 02:26:53,494 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.010s]
+2023-08-08 02:26:53,512 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 02:26:53,528 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.010s]
+2023-08-08 02:26:53,530 - index_hnsw.py[line:149] - INFO: Bulk index: 5947
+2023-08-08 02:26:53,530 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 02:26:53,530 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 02:26:53,530 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 02:26:54,544 - index_hnsw.py[line:96] - INFO: creating 金沃股份2021年年度报告 index ...
+2023-08-08 02:26:54,545 - base.py[line:81] - INFO: DELETE http://127.0.0.1:9200/%E9%87%91%E6%B2%83%E8%82%A1%E4%BB%BD2021%E5%B9%B4%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A [status:404 request:0.001s]
+2023-08-08 02:26:54,550 - base.py[line:95] - WARNING: PUT http://127.0.0.1:9200/%E9%87%91%E6%B2%83%E8%82%A1%E4%BB%BD2021%E5%B9%B4%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A [status:400 request:0.005s]
+2023-08-08 02:26:54,550 - index_hnsw.py[line:123] - WARNING: TransportError(400, 'mapper_parsing_exception', 'unknown parameter [similarity ] on mapper [embedding] of type [dense_vector]')
+2023-08-08 02:26:54,551 - index_hnsw.py[line:127] - INFO: Bulk index for question
+2023-08-08 02:26:54,868 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.309s]
+2023-08-08 02:26:54,887 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.014s]
+2023-08-08 02:26:54,907 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.013s]
+2023-08-08 02:26:54,924 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.010s]
+2023-08-08 02:26:54,942 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 02:26:54,960 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.013s]
+2023-08-08 02:26:54,977 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.010s]
+2023-08-08 02:26:54,993 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 02:26:55,010 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.010s]
+2023-08-08 02:26:55,027 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 02:26:55,042 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.009s]
+2023-08-08 02:26:55,044 - index_hnsw.py[line:149] - INFO: Bulk index: 5422
+2023-08-08 02:26:55,044 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 02:26:55,044 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 02:26:55,044 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 02:26:55,995 - index_hnsw.py[line:96] - INFO: creating 世茂股份2021年年度报告 index ...
+2023-08-08 02:26:55,996 - base.py[line:81] - INFO: DELETE http://127.0.0.1:9200/%E4%B8%96%E8%8C%82%E8%82%A1%E4%BB%BD2021%E5%B9%B4%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A [status:404 request:0.001s]
+2023-08-08 02:26:56,000 - base.py[line:95] - WARNING: PUT http://127.0.0.1:9200/%E4%B8%96%E8%8C%82%E8%82%A1%E4%BB%BD2021%E5%B9%B4%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A [status:400 request:0.004s]
+2023-08-08 02:26:56,000 - index_hnsw.py[line:123] - WARNING: TransportError(400, 'mapper_parsing_exception', 'unknown parameter [similarity ] on mapper [embedding] of type [dense_vector]')
+2023-08-08 02:26:56,000 - index_hnsw.py[line:127] - INFO: Bulk index for question
+2023-08-08 02:26:56,233 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.225s]
+2023-08-08 02:26:56,251 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 02:26:56,270 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 02:26:56,287 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 02:26:56,304 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 02:26:56,325 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.014s]
+2023-08-08 02:26:56,341 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.010s]
+2023-08-08 02:26:56,358 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 02:26:56,374 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.010s]
+2023-08-08 02:26:56,390 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.010s]
+2023-08-08 02:26:56,406 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.010s]
+2023-08-08 02:26:56,423 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 02:26:56,441 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.012s]
+2023-08-08 02:26:56,453 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.007s]
+2023-08-08 02:26:56,454 - index_hnsw.py[line:149] - INFO: Bulk index: 6800
+2023-08-08 02:26:56,454 - index_hnsw.py[line:28] - INFO: Indexing ...
+2023-08-08 02:26:56,455 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: D:\代码\pretrained_model\bert-base-chinese
+2023-08-08 02:26:56,455 - SentenceTransformer.py[line:805] - WARNING: No sentence-transformers model found with name D:\代码\pretrained_model\bert-base-chinese. Creating a new one with MEAN pooling.
+2023-08-08 02:26:57,436 - index_hnsw.py[line:96] - INFO: creating 海航控股2021年年度报告 index ...
+2023-08-08 02:26:57,444 - base.py[line:81] - INFO: DELETE http://127.0.0.1:9200/%E6%B5%B7%E8%88%AA%E6%8E%A7%E8%82%A12021%E5%B9%B4%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A [status:404 request:0.001s]
+2023-08-08 02:26:57,448 - base.py[line:95] - WARNING: PUT http://127.0.0.1:9200/%E6%B5%B7%E8%88%AA%E6%8E%A7%E8%82%A12021%E5%B9%B4%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A [status:400 request:0.004s]
+2023-08-08 02:26:57,448 - index_hnsw.py[line:123] - WARNING: TransportError(400, 'mapper_parsing_exception', 'unknown parameter [similarity ] on mapper [embedding] of type [dense_vector]')
+2023-08-08 02:26:57,448 - index_hnsw.py[line:127] - INFO: Bulk index for question
+2023-08-08 02:26:57,685 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.228s]
+2023-08-08 02:26:57,703 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.012s]
+2023-08-08 02:26:57,721 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.012s]
+2023-08-08 02:26:57,738 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.010s]
+2023-08-08 02:26:57,756 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.012s]
+2023-08-08 02:26:57,773 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 02:26:57,790 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.010s]
+2023-08-08 02:26:57,808 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 02:26:57,825 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.009s]
+2023-08-08 02:26:57,841 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.010s]
+2023-08-08 02:26:57,857 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.009s]
+2023-08-08 02:26:57,874 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 02:26:57,891 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 02:26:57,908 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.010s]
+2023-08-08 02:26:57,924 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.011s]
+2023-08-08 02:26:57,937 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.008s]
+2023-08-08 02:26:57,938 - index_hnsw.py[line:149] - INFO: Bulk index: 7872
+2023-08-08 02:26:57,939 - index_hnsw.py[line:96] - INFO: creating filename index ...
+2023-08-08 02:26:58,019 - base.py[line:81] - INFO: DELETE http://127.0.0.1:9200/filename [status:200 request:0.079s]
+2023-08-08 02:26:58,023 - base.py[line:95] - WARNING: PUT http://127.0.0.1:9200/filename [status:400 request:0.004s]
+2023-08-08 02:26:58,023 - index_hnsw.py[line:123] - WARNING: TransportError(400, 'mapper_parsing_exception', 'unknown parameter [similarity ] on mapper [embedding] of type [dense_vector]')
+2023-08-08 02:26:58,023 - index_hnsw.py[line:127] - INFO: Bulk index for question
+2023-08-08 02:26:58,234 - base.py[line:81] - INFO: POST http://127.0.0.1:9200/_bulk [status:200 request:0.211s]
+2023-08-08 02:26:58,234 - index_hnsw.py[line:149] - INFO: Bulk index: 9
+2023-08-08 02:27:05,580 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 02:27:05,580 - search.py[line:17] - INFO: Searching ...
+2023-08-08 02:27:16,708 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/filename/_search [status:200 request:0.005s]
+2023-08-08 02:28:36,931 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/filename/_search [status:200 request:0.003s]
+2023-08-08 02:28:49,403 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/filename/_search [status:200 request:0.004s]
+2023-08-08 02:32:03,531 - config.py[line:28] - INFO: connect es server in: ['127.0.0.1']
+2023-08-08 02:32:03,531 - search.py[line:17] - INFO: Searching ...
+2023-08-08 02:32:14,303 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/%E6%B1%9F%E8%A5%BF%E9%93%9C%E4%B8%9A2019%E5%B9%B4%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A/_search [status:200 request:0.007s]
+2023-08-08 02:32:21,467 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/%E6%B1%9F%E8%A5%BF%E9%93%9C%E4%B8%9A2019%E5%B9%B4%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A/_search [status:200 request:0.004s]
+2023-08-08 02:33:01,052 - base.py[line:81] - INFO: GET http://127.0.0.1:9200/%E6%B1%9F%E8%A5%BF%E9%93%9C%E4%B8%9A2019%E5%B9%B4%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A/_search [status:200 request:0.004s]
