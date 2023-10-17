@@ -65,17 +65,17 @@ if __name__ == '__main__':
     index_file_content_config.top_n=20
     search_name = Search(index_file_content_config, "kbqa")
 
-    # predict_data = open("../../data/train.json", encoding="utf8").readlines()
-    # submission = open("../../result/es_top20_train.json", "w", encoding="utf8")
+    # predict_data = open("../../../result/es_llm_top20_test.json", encoding="utf8").readlines()
+    # submission = open("../../../result/es_llm_top20_test_quchong.json", "w", encoding="utf8")
     # predict_data = eval("".join([k.strip() for k in predict_data]))
     # print(predict_data[0])
     # final_result = []
     # from tqdm import tqdm
-    #
+
     # for unit in tqdm(predict_data):
-    #     query = unit["question"]
+    #     query = "".join(unit["attribute"])
     #     result = search_name.searchAnswer(query)
-    #     temp_final_result = result
+    #     temp_final_result = [k[2] for k in result]
     #     unit["top20"] = temp_final_result
     #     final_result.append(unit)
     # submission.write(json.dumps(final_result, ensure_ascii=False))
