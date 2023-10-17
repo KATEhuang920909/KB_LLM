@@ -32,7 +32,9 @@ class Index(object):
 
         for contents in docs:
             idx, content = contents.strip().split("\t")
-            question[idx] = {'index': idx, 'document': content}
+            question[idx] = {'index': idx,
+                             'idx_document': "".join([k.strip() for k in content.split("|||")[:2]]),
+                             'ori_document': content}
         return question
 
     def create_index(self, config):
@@ -49,11 +51,17 @@ class Index(object):
                     "index": {
                         "type": "long",
                         "index": "false"},
-                    "document": {
+                    "idx_document": {
                         "type": "text",
                         # "analyzer": "index_ansj",
                         # "search_analyzer": "query_ansj",
                         "index": "true"
+                    },
+                    "ori_document": {
+                        "type": "text",
+                        # "analyzer": "index_ansj",
+                        # "search_analyzer": "query_ansj",
+                        "index": "false"
                     }
                 }
             }
@@ -102,5 +110,5 @@ if __name__ == '__main__':
     index = Index("kbqa")
     index.create_index(config)
     for i in range(9):
-        questions = index.data_convert_v3(f"../../data/kbqa{i}.txt")
+        questions = index.data_convert_v3(f"../../../data/kbqa{i}.txt")
         index.bulk_index(questions, bulk_size=10000, config=config)
