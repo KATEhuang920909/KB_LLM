@@ -61,7 +61,7 @@ class Index(object):
                         "type": "text",
                         # "analyzer": "index_ansj",
                         # "search_analyzer": "query_ansj",
-                        "index": "false"
+                        "index": "true"
                     }
                 }
             }
