@@ -62,7 +62,7 @@ if __name__ == '__main__':
 
     index_file_content_config = Config()
     index_file_content_config.index_name = "kbqa"
-    index_file_content_config.top_n=20
+    index_file_content_config.top_n = 20
     search_name = Search(index_file_content_config, "kbqa")
 
     # predict_data = open("../../../result/es_llm_top20_test.json", encoding="utf8").readlines()
@@ -85,4 +85,4 @@ if __name__ == '__main__':
         result = search_name.searchAnswer(query)
         print(result[0])
         for data in result:
-            print("question:%s  idx_document:%s ori_document:%s " % (data[0], data[1],data[2]))
+            print("question:%s  idx_document:%s ori_document:%s " % (data[0], data[1], data[2]))
