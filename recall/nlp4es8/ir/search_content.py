@@ -64,14 +64,15 @@ if __name__ == '__main__':
     index_file_content_config.index_name = "kbqa"
     index_file_content_config.top_n = 20
     search_name = Search(index_file_content_config, "kbqa")
-
-    # predict_data = open("../../../result/es_llm_top20_test.json", encoding="utf8").readlines()
-    # submission = open("../../../result/es_llm_top20_test_quchong.json", "w", encoding="utf8")
+    #
+    # predict_data = open("../../../result/test_tuple_extract_v2.json", encoding="utf8").readlines()
+    # submission = open("../../../result/es_llm_top20_test_quchong_v2.json", "w", encoding="utf8")
     # predict_data = eval("".join([k.strip() for k in predict_data]))
     # print(predict_data[0])
     # final_result = []
-    # from tqdm import tqdm
+    from tqdm import tqdm
 
+    #
     # for unit in tqdm(predict_data):
     #     query = "".join(unit["attribute"])
     #     result = search_name.searchAnswer(query)
@@ -83,6 +84,30 @@ if __name__ == '__main__':
     while True:
         query = input("please input")
         result = search_name.searchAnswer(query)
-        print(result[0])
+        # print(result[0])
         for data in result:
             print("question:%s  idx_document:%s ori_document:%s " % (data[0], data[1], data[2]))
+    #
+    # train_data = [json.loads(k) for k in open("../../../data/train_sft.json", encoding="utf8")]
+    # dev_data = [json.loads(k) for k in open("../../../data/dev_sft.json", encoding="utf8")]
+    # train_submission = open("../../../data/train_sft_qa.json", "w", encoding="utf8")
+    # dev_submission = open("../../../data/dev_sft_qa.json", "w", encoding="utf8")
+    #
+    #
+    # train_final_result=[]
+    # for unit in tqdm(train_data):
+    #     query = ",".join(["".join([k.strip() for k in u.split("|||")[:2]]) for u in unit["answer"].split(";")])
+    #     result = search_name.searchAnswer(query)
+    #     temp_final_result = [k[2] for k in result]
+    #     unit["top20"] = temp_final_result
+    #     train_final_result.append(unit)
+    # train_submission.write(json.dumps(train_final_result, ensure_ascii=False))
+    #
+    # dev_final_result = []
+    # for unit in tqdm(dev_data):
+    #     query = ",".join(["".join([k.strip() for k in u.split("|||")[:2]]) for u in unit["answer"].split(";")])
+    #     result = search_name.searchAnswer(query)
+    #     temp_final_result = [k[2] for k in result]
+    #     unit["top20"] = temp_final_result
+    #     dev_final_result.append(unit)
+    # dev_submission.write(json.dumps(dev_final_result, ensure_ascii=False))
